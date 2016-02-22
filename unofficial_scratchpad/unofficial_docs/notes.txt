@@ -1,0 +1,110 @@
+
+
+FIVE IFD(s) are supported right now.
+
+/*! Possible EXIF Image File Directories */
+typedef enum {
+	EXIF_IFD_0 = 0,                /*!< */
+	EXIF_IFD_1,                    /*!< */
+	EXIF_IFD_EXIF,                 /*!< */
+	EXIF_IFD_GPS,                  /*!< */
+	EXIF_IFD_INTEROPERABILITY,     /*!< */
+	EXIF_IFD_COUNT                 /*!< Not a real value, just (max_value + 1). */
+} ExifIfd;
+
+
+
+ExifData //  Represents the entire EXIF data found in an image
+
+struct ExifData
+{
+	/*! Data for each IFD */
+	ExifContent *ifd[EXIF_IFD_COUNT];
+
+	/*! Pointer to thumbnail image, or NULL if not available */
+	unsigned char *data;
+
+	/*! Number of bytes in thumbnail image at \c data */
+	unsigned int size;
+
+	ExifDataPrivate *priv;
+};
+
+struct ExifDataPrivate
+{
+	ExifByteOrder order;
+
+	ExifMnoteData *md;
+
+	ExifLog *log;
+	ExifMem *mem;
+
+	unsigned int ref_count;
+
+	/* Temporarily used while loading data */
+	unsigned int offset_mnote;
+
+	ExifDataOption options;
+	ExifDataType data_type;
+};
+
+ExifContent represents one IFD. (parent of an ExifContent is an ExifData)
+struct ExifContent
+{
+        ExifEntry **entries;
+        unsigned int count;
+
+	/* Data containing this content */
+	ExifData *parent;
+
+	ExifContentPrivate *priv;
+};
+
+ExifContent->entries[n] holds items of type ExifEntry
+
+ExifEntry is a tag. a parent of an ExifEntry is an ExifContent.
+
+struct ExifEntry {
+	/*! EXIF tag for this entry */
+        ExifTag tag;
+
+	/*! Type of data in this entry */
+        ExifFormat format;
+
+	/*! Number of elements in the array, if this is an array entry.
+	 * Contains 1 for non-array data types. */
+        unsigned long components;
+
+	/*! Pointer to the raw EXIF data for this entry. It is allocated
+	 * by #exif_entry_initialize and is NULL beforehand. Data contained
+	 * here may be manipulated using the functions in exif-utils.h */
+        unsigned char *data;
+
+	/*! Number of bytes in the buffer at \c data. This must be no less
+	 * than exif_format_get_size(format)*components */
+        unsigned int size;
+
+	/*! #ExifContent containing this entry.
+	 * \see #exif_entry_get_ifd */
+	ExifContent *parent;
+
+	/*! Internal data to be used by libexif itself */
+	ExifEntryPrivate *priv;
+};
+
+
+struct ExifMem {
+	unsigned int ref_count;
+	ExifMemAllocFunc alloc_func;
+	ExifMemReallocFunc realloc_func;
+	ExifMemFreeFunc free_func;
+};
+
+
+only use of data type constants?
+
+#define RECORDED \
+((ExifTagTable[i].esl[ifd][EXIF_DATA_TYPE_UNCOMPRESSED_CHUNKY] != EXIF_SUPPORT_LEVEL_NOT_RECORDED) || \
+ (ExifTagTable[i].esl[ifd][EXIF_DATA_TYPE_UNCOMPRESSED_PLANAR] != EXIF_SUPPORT_LEVEL_NOT_RECORDED) || \
+ (ExifTagTable[i].esl[ifd][EXIF_DATA_TYPE_UNCOMPRESSED_YCC] != EXIF_SUPPORT_LEVEL_NOT_RECORDED) || \
+ (ExifTagTable[i].esl[ifd][EXIF_DATA_TYPE_COMPRESSED] != EXIF_SUPPORT_LEVEL_NOT_RECORDED))
