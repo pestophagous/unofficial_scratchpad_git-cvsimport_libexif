@@ -605,6 +605,30 @@ exif_entry_dump (ExifEntry *e, unsigned int indent)
 	printf ("%s  Value: %s\n", buf, exif_entry_get_value (e, value, sizeof(value)));
 }
 
+/*! Check if a string consists entirely of a single, repeated character.
+ * Up to first n bytes are checked.
+ * 
+ * \param[in] data pointer of string to check
+ * \param[in] ch character to match
+ * \param[in] n maximum number of characters to match
+ *
+ * \return 0 if the string matches or is of zero length, nonzero otherwise
+ */
+static int
+match_repeated_char(const unsigned char *data, unsigned char ch, size_t n)
+{
+	int i;
+	for (i=n; i; --i, ++data) {
+		if (*data == 0) {
+			i = 0;	/* all bytes before NUL matched */
+			break;
+		}
+		if (*data != ch)
+			break;
+	}
+	return i;
+}
+
 #define CF(entry,target,v,maxlen)					\
 {									\
 	if (entry->format != target) {					\
@@ -939,9 +963,9 @@ exif_entry_get_value (ExifEntry *e, char *val, unsigned int maxlen)
 		/*
 		 * First part: Photographer.
 		 * Some cameras store a string like "   " here. Ignore it.
+		 * Remember that a corrupted tag might not be NUL-terminated
 		 */
-		if (e->size && e->data &&
-		    (strspn ((char *)e->data, " ") != strlen ((char *) e->data)))
+		if (e->size && e->data && match_repeated_char(e->data, ' ', e->size))
 			strncpy (val, (char *) e->data, MIN (maxlen, e->size));
 		else
 			strncpy (val, _("[None]"), maxlen);
