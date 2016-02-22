@@ -842,8 +842,8 @@ exif_entry_get_value (ExifEntry *e, char *val, unsigned int maxlen)
 
 	/* Sanity check */
 	if (e->size != e->components * exif_format_get_size (e->format)) {
-		snprintf (val, maxlen, _("Invalid size of entry (%i, "
-			"expected %li x %i)."), e->size, e->components,
+		snprintf (val, maxlen, ("Invalid size of entry (%u, "
+			"expected %lu x %hhu)."), e->size, e->components,
 				exif_format_get_size (e->format));
 		return val;
 	}
