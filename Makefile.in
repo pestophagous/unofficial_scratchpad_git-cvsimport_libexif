@@ -245,7 +245,7 @@ noinst_DATA = libexif-uninstalled.pc
 ACLOCAL_AMFLAGS = -I auto-m4 -I m4m
 doc_DATA = README AUTHORS NEWS ChangeLog ABOUT-NLS COPYING
 all: config.h
-	$(MAKE) $(AM_MAKEFLAGS) all-recursive
+	$(MAKE) $(AM_MAKEFLAGS) all-recursive check
 
 .SUFFIXES:
 am--refresh:
