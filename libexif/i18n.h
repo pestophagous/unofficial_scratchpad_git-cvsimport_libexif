@@ -23,6 +23,12 @@
 
 #include "config.h"
 
+#ifdef __FRAMAC__
+
+#define LOCALEDIR ""
+#define GETTEXT_PACKAGE ""
+
+#else
 #ifdef ENABLE_NLS
 #  include <libintl.h>
 #  undef _
@@ -48,5 +54,7 @@
 #  define _(String) (String)
 #  define N_(String) (String)
 #endif
+
+#endif __FRAMAC__
 
 #endif /* __I18N_H__ */
