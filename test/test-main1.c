@@ -1,12 +1,31 @@
 
-#ifdef __FRAMAC__
-#include "__fc_string_axiomatic.h"
-#endif // __FRAMAC__
-
 #include "libexif/exif-entry.h"
 
 #include <stdio.h>       // printf
 #include <string.h>      // memset
+
+#ifdef __FRAMAC__
+#    include "__fc_string_axiomatic.h"
+#    include "__fc_builtin.h"
+#else
+
+unsigned char
+Frama_C_unsigned_char_interval(unsigned char min, unsigned char max);
+
+int
+Frama_C_interval(int min, int max);
+
+unsigned char Frama_C_unsigned_char_interval(unsigned char min, unsigned char max)
+{
+    return 0xFF;
+}
+
+int Frama_C_interval(int min, int max)
+{
+    return 1;
+}
+
+#endif // __FRAMAC__
 
 int main(void)
 {
@@ -18,19 +37,20 @@ int main(void)
     // ExifContent->entries[n] holds items of type ExifEntry
     ExifContent an_idf;
     an_idf.entries = 0;
-    an_idf.count = 64; // not yet used in this test (on feb 20). count of entries?
+    an_idf.count = 1;
     an_idf.parent = &one_jpeg;
     an_idf.priv = 0;
 
     unsigned char tag_data_buffer[400];  // add nondeterminism to this buffer.
-    unsigned char some_char = 0xFF;
-    memset(tag_data_buffer, some_char, 400);
-    some_char = 0x22;
-    /* tag_data_buffer[0] = 0xFF; */
-    tag_data_buffer[1] = some_char;
-    /* tag_data_buffer[2] = 0xFF; */
 
-    ExifEntry the_entries[3];
+    size_t ii = 0;
+    for ( ii = 0; ii < 400; ii++ )
+    {
+        tag_data_buffer[ii] = Frama_C_unsigned_char_interval( 0, 0xFF );
+    }
+
+    ExifEntry the_entries[1];
+    /*
     the_entries[0].tag = EXIF_TAG_ISO_SPEED_RATINGS;   // ExifTag. 0-0xa500(42240). try 0-65535
     the_entries[0].format = EXIF_FORMAT_SHORT;     // ExifFormat. valid 1-12. try 0-20
     the_entries[0].components = 1; // unsigned long (1 for non-array types). try 0-20.
@@ -40,7 +60,19 @@ int main(void)
 
     the_entries[0].parent = &an_idf;
     the_entries[0].priv = 0;
+    */
 
+    the_entries[0].tag = EXIF_TAG_COPYRIGHT;//Frama_C_interval(0, 65535);
+    the_entries[0].format = Frama_C_interval(0, 20);
+    the_entries[0].components = Frama_C_interval(0, 20);
+
+    the_entries[0].size = Frama_C_interval(0, 400);
+    the_entries[0].data = tag_data_buffer;
+
+    the_entries[0].parent = &an_idf;
+    the_entries[0].priv = 0;
+
+    /*
     the_entries[1].tag = EXIF_TAG_XP_AUTHOR;   // ExifTag. 0-0xa500(42240). try 0-65535
     the_entries[1].format = EXIF_FORMAT_BYTE;     // ExifFormat. valid 1-12. try 0-20
     the_entries[1].components = 1; // unsigned long (1 for non-array types). try 0-20.
@@ -51,6 +83,7 @@ int main(void)
     the_entries[1].parent = &an_idf;
     the_entries[1].priv = 0;
 
+
     the_entries[2].tag = EXIF_TAG_EXPOSURE_TIME;   // ExifTag. 0-0xa500(42240). try 0-65535
     the_entries[2].format = EXIF_FORMAT_RATIONAL;     // ExifFormat. valid 1-12. try 0-20
     the_entries[2].components = 1; // unsigned long (1 for non-array types). try 0-20.
@@ -60,7 +93,7 @@ int main(void)
 
     the_entries[2].parent = &an_idf;
     the_entries[2].priv = 0;
-
+    */
     an_idf.entries = the_entries;
 
     one_jpeg.ifd[0] = &an_idf;
@@ -74,32 +107,11 @@ int main(void)
     exif_entry_get_value(&the_entries[0], valout, 200);
     printf("output of exif_entry_get_value: %s\n", valout);
 
-    exif_entry_get_value(&the_entries[1], valout, 200);
-    printf("output of exif_entry_get_value: %s\n", valout);
+    /* exif_entry_get_value(&the_entries[1], valout, 200); */
+    /* printf("output of exif_entry_get_value: %s\n", valout); */
 
-    exif_entry_get_value(&the_entries[2], valout, 200);
-    printf("output of exif_entry_get_value: %s\n", valout);
-
-    char ten_chars[10];
-    memset(ten_chars, 0, 10);
-    ten_chars[0] = 'h';
-    ten_chars[1] = 'i';
-
-    char other_chars[4] = "-o.";
-
-    printf("ten_chars: %s\n", ten_chars);
-    /*@ assert valid_read_string(&other_chars[0]); */
-    strncat(ten_chars, other_chars, 9-2);
-    printf("ten_chars: %s\n", ten_chars);
-
-    char ten_more_chars[10];
-    memset(ten_more_chars, 0, 10);
-    ten_more_chars[0] = 'h';
-    ten_more_chars[1] = 'i';
-
-    printf("ten_more_chars: %s\n", ten_more_chars);
-    strncat(ten_more_chars, "=a!", 9-2);
-    printf("ten_more_chars: %s\n", ten_more_chars);
+    /* exif_entry_get_value(&the_entries[2], valout, 200); */
+    /* printf("output of exif_entry_get_value: %s\n", valout); */
 
     return 0;
 }
