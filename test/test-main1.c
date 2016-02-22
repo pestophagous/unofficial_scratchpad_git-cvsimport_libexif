@@ -84,8 +84,7 @@ int main(void)
     char other_chars[4] = "-o.";
 
     printf("ten_chars: %s\n", ten_chars);
-    strncat(ten_chars, other_chars, 9-2);// this gets: 'surely valid. valid but dead'
-                                                  // if i revert the overflow fix in c95b227627
+    strncat(ten_chars, other_chars, 9-2);
     printf("ten_chars: %s\n", ten_chars);
 
     char ten_more_chars[10];
@@ -94,8 +93,7 @@ int main(void)
     ten_more_chars[1] = 'i';
 
     printf("ten_more_chars: %s\n", ten_more_chars);
-    strncat(ten_more_chars, "=a!", 9-2);// this gets: 'surely valid. valid but dead'
-                                                  // if i revert the overflow fix in c95b227627
+    strncat(ten_more_chars, "=a!", 9-2);
     printf("ten_more_chars: %s\n", ten_more_chars);
 
     return 0;
