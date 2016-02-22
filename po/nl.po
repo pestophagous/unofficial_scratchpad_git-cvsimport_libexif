@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libexif-0.6.18-pre2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-10-01 22:54-0700\n"
+"POT-Creation-Date: 2009-10-09 14:52-0700\n"
 "PO-Revision-Date: 2009-10-02 17:35+0100\n"
 "Last-Translator: Erwin Poeze <erwin.poeze@gmail.com>\n"
 "Language-Team: Dutch <vertaling@vrijschrift.org>\n"
@@ -1643,43 +1643,76 @@ msgid "Follow specification"
 msgstr "Volg de specificatie"
 
 #: libexif/exif-data.c:1202
-msgid "Add, correct and remove entries to get EXIF data that follows the specification."
-msgstr "Voeg toe, corrigeer en verwijder items om EXIF-gegevens te verkrijgen volgens de specificatie."
+msgid ""
+"Add, correct and remove entries to get EXIF data that follows the "
+"specification."
+msgstr ""
+"Voeg toe, corrigeer en verwijder items om EXIF-gegevens te verkrijgen "
+"volgens de specificatie."
 
 #: libexif/exif-data.c:1204
 msgid "Do not change maker note"
 msgstr "Laat de fabrikantennotitie ongewijzigd"
 
 #: libexif/exif-data.c:1205
-msgid "When loading and resaving Exif data, save the maker note unmodified. Be aware that the maker note can get corrupted."
-msgstr "Laat bij het laden en opnieuw opslaan van EXIF-gegevens de fabrikantennotitie ongewijzigd. Wees u er van bewust dat de fabrikantennotitie beschadigd kan raken."
+msgid ""
+"When loading and resaving Exif data, save the maker note unmodified. Be "
+"aware that the maker note can get corrupted."
+msgstr ""
+"Laat bij het laden en opnieuw opslaan van EXIF-gegevens de "
+"fabrikantennotitie ongewijzigd. Wees u er van bewust dat de "
+"fabrikantennotitie beschadigd kan raken."
 
 #: libexif/exif-entry.c:233 libexif/exif-entry.c:292 libexif/exif-entry.c:325
 #, c-format
-msgid "Tag '%s' was of format '%s' (which is against specification) and has been changed to format '%s'."
-msgstr "Het label '%s' had de structuur '%s' (hetgeen niet volgens de specificaties is) en is gewijzigd naar de structuur '%s'."
+msgid ""
+"Tag '%s' was of format '%s' (which is against specification) and has been "
+"changed to format '%s'."
+msgstr ""
+"Het label '%s' had de structuur '%s' (hetgeen niet volgens de specificaties "
+"is) en is gewijzigd naar de structuur '%s'."
 
 #: libexif/exif-entry.c:260
 #, c-format
-msgid "Tag '%s' is of format '%s' (which is against specification) but cannot be changed to format '%s'."
-msgstr "Het label '%s' had structuur '%s' (hetgeen niet volgens de specificaties is) maar kan niet worden gewijzigd naar structuur '%s'."
+msgid ""
+"Tag '%s' is of format '%s' (which is against specification) but cannot be "
+"changed to format '%s'."
+msgstr ""
+"Het label '%s' had structuur '%s' (hetgeen niet volgens de specificaties is) "
+"maar kan niet worden gewijzigd naar structuur '%s'."
 
 #: libexif/exif-entry.c:343
 #, c-format
-msgid "Tag 'UserComment' had invalid format '%s'. Format has been set to 'undefined'."
-msgstr "Het label 'UserComment' heeft een ongeldige structuur '%s'. De structuur is op 'undefined' ingesteld."
+msgid ""
+"Tag 'UserComment' had invalid format '%s'. Format has been set to "
+"'undefined'."
+msgstr ""
+"Het label 'UserComment' heeft een ongeldige structuur '%s'. De structuur is "
+"op 'undefined' ingesteld."
 
 #: libexif/exif-entry.c:370
-msgid "Tag 'UserComment' has been expanded to at least 8 bytes in order to follow the specification."
-msgstr "Het label 'UserComment' is vergroot naar ten minste 8 bytes om te voldoen aan de specificatie."
+msgid ""
+"Tag 'UserComment' has been expanded to at least 8 bytes in order to follow "
+"the specification."
+msgstr ""
+"Het label 'UserComment' is vergroot naar ten minste 8 bytes om te voldoen "
+"aan de specificatie."
 
 #: libexif/exif-entry.c:385
-msgid "Tag 'UserComment' is not empty but does not start with a format identifier. This has been fixed."
-msgstr "Het label 'UserComment' is niet leeg, maar begint niet met een structuuridentificatie. Dit is verbeterd."
+msgid ""
+"Tag 'UserComment' is not empty but does not start with a format identifier. "
+"This has been fixed."
+msgstr ""
+"Het label 'UserComment' is niet leeg, maar begint niet met een "
+"structuuridentificatie. Dit is verbeterd."
 
 #: libexif/exif-entry.c:413
-msgid "Tag 'UserComment' did not start with a format identifier. This has been fixed."
-msgstr "Het label 'UserComment' begon niet met een structuuridentificatie. Dit is verbeterd."
+msgid ""
+"Tag 'UserComment' did not start with a format identifier. This has been "
+"fixed."
+msgstr ""
+"Het label 'UserComment' begon niet met een structuuridentificatie. Dit is "
+"verbeterd."
 
 #: libexif/exif-entry.c:451
 #, c-format
@@ -1694,12 +1727,16 @@ msgstr "%i bytes met niet-ondersteund gegevenstype"
 #: libexif/exif-entry.c:612
 #, c-format
 msgid "The tag '%s' contains data of an invalid format ('%s', expected '%s')."
-msgstr "Het label '%s' bevat gegevens met een ongeldige structuur ('%s', verwacht '%s')."
+msgstr ""
+"Het label '%s' bevat gegevens met een ongeldige structuur ('%s', verwacht '%"
+"s')."
 
 #: libexif/exif-entry.c:625
 #, c-format
-msgid "The tag '%s' contains an invalid number of components (%i, expected %i)."
-msgstr "Het label '%s' bevat een ongeldig aantal componenten (%i, verwacht %i)."
+msgid ""
+"The tag '%s' contains an invalid number of components (%i, expected %i)."
+msgstr ""
+"Het label '%s' bevat een ongeldig aantal componenten (%i, verwacht %i)."
 
 #: libexif/exif-entry.c:639
 msgid "chunky format"
@@ -2129,12 +2166,20 @@ msgid "Flash fired, compulsory flash mode, red-eye reduction mode"
 msgstr "Geflitst, altijd-flitsen-modus, rode-ogenreductie"
 
 #: libexif/exif-entry.c:771
-msgid "Flash fired, compulsory flash mode, red-eye reduction mode, return light not detected"
-msgstr "Geflitst, altijd-flitsen-modus, rode-ogenreductie, teruggekaatst licht niet gedetecteerd"
+msgid ""
+"Flash fired, compulsory flash mode, red-eye reduction mode, return light not "
+"detected"
+msgstr ""
+"Geflitst, altijd-flitsen-modus, rode-ogenreductie, teruggekaatst licht niet "
+"gedetecteerd"
 
 #: libexif/exif-entry.c:773
-msgid "Flash fired, compulsory flash mode, red-eye reduction mode, return light detected"
-msgstr "Geflitst, altijd-flitsen-modus, rode-ogenreductie, teruggekaatst licht gedetecteerd"
+msgid ""
+"Flash fired, compulsory flash mode, red-eye reduction mode, return light "
+"detected"
+msgstr ""
+"Geflitst, altijd-flitsen-modus, rode-ogenreductie, teruggekaatst licht "
+"gedetecteerd"
 
 #: libexif/exif-entry.c:775
 msgid "Flash did not fire, auto mode, red-eye reduction mode"
@@ -2145,12 +2190,17 @@ msgid "Flash fired, auto mode, red-eye reduction mode"
 msgstr "Geflitst, automatische modus, rode-ogenreductie"
 
 #: libexif/exif-entry.c:777
-msgid "Flash fired, auto mode, return light not detected, red-eye reduction mode"
-msgstr "Niet geflitst, automatische modus, teruggekaatst licht niet gedetecteerd, rode-ogenreductie"
+msgid ""
+"Flash fired, auto mode, return light not detected, red-eye reduction mode"
+msgstr ""
+"Niet geflitst, automatische modus, teruggekaatst licht niet gedetecteerd, "
+"rode-ogenreductie"
 
 #: libexif/exif-entry.c:779
 msgid "Flash fired, auto mode, return light detected, red-eye reduction mode"
-msgstr "Geflitst, automatische modus, teruggekaatst licht gedetecteerd, rode-ogenreductie"
+msgstr ""
+"Geflitst, automatische modus, teruggekaatst licht gedetecteerd, rode-"
+"ogenreductie"
 
 #: libexif/exif-entry.c:783
 msgid "?"
@@ -2195,7 +2245,9 @@ msgstr "Niet-ondersteunde JIS tekst"
 
 #: libexif/exif-entry.c:902
 msgid "Tag UserComment does not comply with standard but contains data."
-msgstr "Label Gebruikersopmerking voldoet niet aan de standaard maar bevat wel gegevens."
+msgstr ""
+"Label Gebruikersopmerking voldoet niet aan de standaard maar bevat wel "
+"gegevens."
 
 #: libexif/exif-entry.c:906
 #, c-format
@@ -2457,8 +2509,17 @@ msgid "Interoperability Index"
 msgstr "Interoperabiliteitsindex"
 
 #: libexif/exif-tag.c:58
-msgid "Indicates the identification of the Interoperability rule. Use \"R98\" for stating ExifR98 Rules. Four bytes used including the termination code (NULL). see the separate volume of Recommended Exif Interoperability Rules (ExifR98) for other tags used for ExifR98."
-msgstr "Geeft de identificatie van de interoperabiltiteitsregel weer. Gebruik \"R98\" als afkorting van ExifR98-regels. Gebruikt vier bytes, inclusief het afbreekteken (NUL). Zie het aparte deel van Aanbevolen Exif-interoperabiliteitsregels (ExifR98) voor andere labels in het gebruik van ExifR98."
+msgid ""
+"Indicates the identification of the Interoperability rule. Use \"R98\" for "
+"stating ExifR98 Rules. Four bytes used including the termination code "
+"(NULL). see the separate volume of Recommended Exif Interoperability Rules "
+"(ExifR98) for other tags used for ExifR98."
+msgstr ""
+"Geeft de identificatie van de interoperabiltiteitsregel weer. Gebruik \"R98"
+"\" als afkorting van ExifR98-regels. Gebruikt vier bytes, inclusief het "
+"afbreekteken (NUL). Zie het aparte deel van Aanbevolen Exif-"
+"interoperabiliteitsregels (ExifR98) voor andere labels in het gebruik van "
+"ExifR98."
 
 #: libexif/exif-tag.c:65
 msgid "Interoperability Version"
@@ -2469,40 +2530,68 @@ msgid "Image Width"
 msgstr "Afbeeldingsbreedte"
 
 #: libexif/exif-tag.c:68
-msgid "The number of columns of image data, equal to the number of pixels per row. In JPEG compressed data a JPEG marker is used instead of this tag."
-msgstr "Het aantal kolommen afbeeldingsgegevens, gelijk aan het aantal pixels per rij. In JPEG-gecomprimeerde gegevens wordt een JPEG-aanduiding gebruikt in plaats van dit label."
+msgid ""
+"The number of columns of image data, equal to the number of pixels per row. "
+"In JPEG compressed data a JPEG marker is used instead of this tag."
+msgstr ""
+"Het aantal kolommen afbeeldingsgegevens, gelijk aan het aantal pixels per "
+"rij. In JPEG-gecomprimeerde gegevens wordt een JPEG-aanduiding gebruikt in "
+"plaats van dit label."
 
 #: libexif/exif-tag.c:72
 msgid "Image Length"
 msgstr "Afbeeldingslengte"
 
 #: libexif/exif-tag.c:73
-msgid "The number of rows of image data. In JPEG compressed data a JPEG marker is used instead of this tag."
-msgstr "Het aantal rijen afbeeldingsgegevens. In JPEG-gecomprimeerde gegevens wordt een JPEG-aanduiding gebruikt in plaats van dit label."
+msgid ""
+"The number of rows of image data. In JPEG compressed data a JPEG marker is "
+"used instead of this tag."
+msgstr ""
+"Het aantal rijen afbeeldingsgegevens. In JPEG-gecomprimeerde gegevens wordt "
+"een JPEG-aanduiding gebruikt in plaats van dit label."
 
 #: libexif/exif-tag.c:76
 msgid "Bits per Sample"
 msgstr "Bits per monster"
 
 #: libexif/exif-tag.c:77
-msgid "The number of bits per image component. In this standard each component of the image is 8 bits, so the value for this tag is 8. See also <SamplesPerPixel>. In JPEG compressed data a JPEG marker is used instead of this tag."
-msgstr "Het aantal bits per afbeeldingscomponent. In deze standaard bestaat iedere afbeeldingscomponent uit 8 bits, dus de waarde van deze label is 8. Zie ook <SamplesPerPixel>. In JPEG-gecomprimeerde gegevens wordt een JPEG-aanduiding gebruikt in plaats van dit label."
+msgid ""
+"The number of bits per image component. In this standard each component of "
+"the image is 8 bits, so the value for this tag is 8. See also "
+"<SamplesPerPixel>. In JPEG compressed data a JPEG marker is used instead of "
+"this tag."
+msgstr ""
+"Het aantal bits per afbeeldingscomponent. In deze standaard bestaat iedere "
+"afbeeldingscomponent uit 8 bits, dus de waarde van deze label is 8. Zie ook "
+"<SamplesPerPixel>. In JPEG-gecomprimeerde gegevens wordt een JPEG-aanduiding "
+"gebruikt in plaats van dit label."
 
 #: libexif/exif-tag.c:82
 msgid "Compression"
 msgstr "Compressie"
 
 #: libexif/exif-tag.c:83
-msgid "The compression scheme used for the image data. When a primary image is JPEG compressed, this designation is not necessary and is omitted. When thumbnails use JPEG compression, this tag value is set to 6."
-msgstr "De comprimeerregels voor de afbeeldingsgegevens. Als een hoofdafbeelding JPEG-gecomprimeerd is, dan is deze aanduiding niet nodig en wordt het weggelaten. Als miniaturen JPEG-compressie gebruiken, dan wordt deze labelwaarde ingesteld op 6."
+msgid ""
+"The compression scheme used for the image data. When a primary image is JPEG "
+"compressed, this designation is not necessary and is omitted. When "
+"thumbnails use JPEG compression, this tag value is set to 6."
+msgstr ""
+"De comprimeerregels voor de afbeeldingsgegevens. Als een hoofdafbeelding "
+"JPEG-gecomprimeerd is, dan is deze aanduiding niet nodig en wordt het "
+"weggelaten. Als miniaturen JPEG-compressie gebruiken, dan wordt deze "
+"labelwaarde ingesteld op 6."
 
 #: libexif/exif-tag.c:89
 msgid "Photometric Interpretation"
 msgstr "Fotometrieke interpretatie"
 
 #: libexif/exif-tag.c:90
-msgid "The pixel composition. In JPEG compressed data a JPEG marker is used instead of this tag."
-msgstr "De pixelcompositie. In JPEG-gecomprimeerde gegevens wordt een JPEG-aanduiding gebruikt in plaats van dit label."
+msgid ""
+"The pixel composition. In JPEG compressed data a JPEG marker is used instead "
+"of this tag."
+msgstr ""
+"De pixelcompositie. In JPEG-gecomprimeerde gegevens wordt een JPEG-"
+"aanduiding gebruikt in plaats van dit label."
 
 #: libexif/exif-tag.c:94
 msgid "Fill Order"
@@ -2517,32 +2606,61 @@ msgid "Image Description"
 msgstr "Beschrijving van afbeelding"
 
 #: libexif/exif-tag.c:99
-msgid "A character string giving the title of the image. It may be a comment such as \"1988 company picnic\" or the like. Two-bytes character codes cannot be used. When a 2-bytes code is necessary, the Exif Private tag <UserComment> is to be used."
-msgstr "Een tekenreeks met de afbeeldingstitel. Dit kan bestaan uit een opmerkingen zoals \"2008 bedrijfsuitje\" of iets dergelijks. Twee-byte tekencodes kunnen niet gebruikt worden. Als deze codering nodig is, gebruik dan het Exif-gebonden label <UserComment>."
+msgid ""
+"A character string giving the title of the image. It may be a comment such "
+"as \"1988 company picnic\" or the like. Two-bytes character codes cannot be "
+"used. When a 2-bytes code is necessary, the Exif Private tag <UserComment> "
+"is to be used."
+msgstr ""
+"Een tekenreeks met de afbeeldingstitel. Dit kan bestaan uit een opmerkingen "
+"zoals \"2008 bedrijfsuitje\" of iets dergelijks. Twee-byte tekencodes kunnen "
+"niet gebruikt worden. Als deze codering nodig is, gebruik dan het Exif-"
+"gebonden label <UserComment>."
 
 #: libexif/exif-tag.c:105
 msgid "Manufacturer"
 msgstr "Fabrikant"
 
 #: libexif/exif-tag.c:106
-msgid "The manufacturer of the recording equipment. This is the manufacturer of the DSC, scanner, video digitizer or other equipment that generated the image. When the field is left blank, it is treated as unknown."
-msgstr "De fabrikant van de opnameapparatuur. Dit is de fabrikant van de DSC, de scanner, de video-digitaalomzetter of andere apparatuur die de afbeelding genereert. Als het veld leeg blijft, dan wordt dit als onbekend beschouwd."
+msgid ""
+"The manufacturer of the recording equipment. This is the manufacturer of the "
+"DSC, scanner, video digitizer or other equipment that generated the image. "
+"When the field is left blank, it is treated as unknown."
+msgstr ""
+"De fabrikant van de opnameapparatuur. Dit is de fabrikant van de DSC, de "
+"scanner, de video-digitaalomzetter of andere apparatuur die de afbeelding "
+"genereert. Als het veld leeg blijft, dan wordt dit als onbekend beschouwd."
 
 #: libexif/exif-tag.c:112
 msgid "Model"
 msgstr "Model"
 
 #: libexif/exif-tag.c:113
-msgid "The model name or model number of the equipment. This is the model name or number of the DSC, scanner, video digitizer or other equipment that generated the image. When the field is left blank, it is treated as unknown."
-msgstr "De modelnaam of het modelnummer van de apparatuur. Dit is de modelnaam of nummer van de DSC, de scanner, de video-digitaalomzetter of andere apparatuur die de afbeelding genereert. Als het veld leeg blijft, dan wordt dit als onbekend beschouwd."
+msgid ""
+"The model name or model number of the equipment. This is the model name or "
+"number of the DSC, scanner, video digitizer or other equipment that "
+"generated the image. When the field is left blank, it is treated as unknown."
+msgstr ""
+"De modelnaam of het modelnummer van de apparatuur. Dit is de modelnaam of "
+"nummer van de DSC, de scanner, de video-digitaalomzetter of andere "
+"apparatuur die de afbeelding genereert. Als het veld leeg blijft, dan wordt "
+"dit als onbekend beschouwd."
 
 #: libexif/exif-tag.c:118
 msgid "Strip Offsets"
 msgstr "Strookverschuiving"
 
 #: libexif/exif-tag.c:119
-msgid "For each strip, the byte offset of that strip. It is recommended that this be selected so the number of strip bytes does not exceed 64 Kbytes. With JPEG compressed data this designation is not needed and is omitted. See also <RowsPerStrip> and <StripByteCounts>."
-msgstr "Voor iedere strook, de byteverschuiving daarvan. Het wordt aanbevolen om dit zo te selecteren dat het aantal strookbytes de 64 Kbytes niet overschrijdt. Met JPEG-gecomprimeerde gegevens is deze aanduiding niet nodig en wordt weggelaten. Zie ook <RowsPerStrip> en <StripByteCounts>."
+msgid ""
+"For each strip, the byte offset of that strip. It is recommended that this "
+"be selected so the number of strip bytes does not exceed 64 Kbytes. With "
+"JPEG compressed data this designation is not needed and is omitted. See also "
+"<RowsPerStrip> and <StripByteCounts>."
+msgstr ""
+"Voor iedere strook, de byteverschuiving daarvan. Het wordt aanbevolen om dit "
+"zo te selecteren dat het aantal strookbytes de 64 Kbytes niet overschrijdt. "
+"Met JPEG-gecomprimeerde gegevens is deze aanduiding niet nodig en wordt "
+"weggelaten. Zie ook <RowsPerStrip> en <StripByteCounts>."
 
 #: libexif/exif-tag.c:125
 msgid "Orientation"
@@ -2557,104 +2675,186 @@ msgid "Samples per Pixel"
 msgstr "Monsters per pixel"
 
 #: libexif/exif-tag.c:130
-msgid "The number of components per pixel. Since this standard applies to RGB and YCbCr images, the value set for this tag is 3. In JPEG compressed data a JPEG marker is used instead of this tag."
-msgstr "Het aantal componenten per pixel. Omdat deze standaard geldt voor RGB- en YCbCr-afbeeldingen, wordt de waarde van dit label ingesteld op 3. In JPEG-gecomprimeerde gegevens wordt een JPEG-aanduiding gebruikt in plaats van dit label."
+msgid ""
+"The number of components per pixel. Since this standard applies to RGB and "
+"YCbCr images, the value set for this tag is 3. In JPEG compressed data a "
+"JPEG marker is used instead of this tag."
+msgstr ""
+"Het aantal componenten per pixel. Omdat deze standaard geldt voor RGB- en "
+"YCbCr-afbeeldingen, wordt de waarde van dit label ingesteld op 3. In JPEG-"
+"gecomprimeerde gegevens wordt een JPEG-aanduiding gebruikt in plaats van dit "
+"label."
 
 #: libexif/exif-tag.c:135
 msgid "Rows per Strip"
 msgstr "Rijen per strook"
 
 #: libexif/exif-tag.c:136
-msgid "The number of rows per strip. This is the number of rows in the image of one strip when an image is divided into strips. With JPEG compressed data this designation is not needed and is omitted. See also <StripOffsets> and <StripByteCounts>."
-msgstr "Het aantal rijen per strook. Dit is het aantal rijen in de afbeelding van een strook als de afbeelding in stroken verdeeld is. Met JPEG-gecomprimeerde gegevens is deze aanduiding niet nodig en wordt weggelaten. Zie ook <StripOffsets> en <StripByteCounts>."
+msgid ""
+"The number of rows per strip. This is the number of rows in the image of one "
+"strip when an image is divided into strips. With JPEG compressed data this "
+"designation is not needed and is omitted. See also <StripOffsets> and "
+"<StripByteCounts>."
+msgstr ""
+"Het aantal rijen per strook. Dit is het aantal rijen in de afbeelding van "
+"een strook als de afbeelding in stroken verdeeld is. Met JPEG-gecomprimeerde "
+"gegevens is deze aanduiding niet nodig en wordt weggelaten. Zie ook "
+"<StripOffsets> en <StripByteCounts>."
 
 #: libexif/exif-tag.c:142
 msgid "Strip Byte Count"
 msgstr "Aantal strookbytes"
 
 #: libexif/exif-tag.c:143
-msgid "The total number of bytes in each strip. With JPEG compressed data this designation is not needed and is omitted."
-msgstr "Het aantal bytes in iedere strook. Met JPEG-gecomprimeerde gegevens is deze aanduiding niet nodig en wordt weggelaten."
+msgid ""
+"The total number of bytes in each strip. With JPEG compressed data this "
+"designation is not needed and is omitted."
+msgstr ""
+"Het aantal bytes in iedere strook. Met JPEG-gecomprimeerde gegevens is deze "
+"aanduiding niet nodig en wordt weggelaten."
 
 #: libexif/exif-tag.c:146
 msgid "x-Resolution"
 msgstr "x-resolutie"
 
 #: libexif/exif-tag.c:147
-msgid "The number of pixels per <ResolutionUnit> in the <ImageWidth> direction. When the image resolution is unknown, 72 [dpi] is designated."
-msgstr "Het aantal pixels per <ResolutionUnit> in de <ImageWidth>-richting. Als de afbeeldingsresolutie niet bekend is, wordt 72 [dpi] toegewezen."
+msgid ""
+"The number of pixels per <ResolutionUnit> in the <ImageWidth> direction. "
+"When the image resolution is unknown, 72 [dpi] is designated."
+msgstr ""
+"Het aantal pixels per <ResolutionUnit> in de <ImageWidth>-richting. Als de "
+"afbeeldingsresolutie niet bekend is, wordt 72 [dpi] toegewezen."
 
 #: libexif/exif-tag.c:151
 msgid "y-Resolution"
 msgstr "y-resolutie"
 
 #: libexif/exif-tag.c:152
-msgid "The number of pixels per <ResolutionUnit> in the <ImageLength> direction. The same value as <XResolution> is designated."
-msgstr "Het aantal pixels per <ResolutionUnit> in de <ImageLength>-richting. Dezelfde waarde als <XResolution> wordt toegewezen."
+msgid ""
+"The number of pixels per <ResolutionUnit> in the <ImageLength> direction. "
+"The same value as <XResolution> is designated."
+msgstr ""
+"Het aantal pixels per <ResolutionUnit> in de <ImageLength>-richting. "
+"Dezelfde waarde als <XResolution> wordt toegewezen."
 
 #: libexif/exif-tag.c:156
 msgid "Planar Configuration"
 msgstr "Planaire configuratie"
 
 #: libexif/exif-tag.c:157
-msgid "Indicates whether pixel components are recorded in a chunky or planar format. In JPEG compressed files a JPEG marker is used instead of this tag. If this field does not exist, the TIFF default of 1 (chunky) is assumed."
-msgstr "Geeft aan of pixelcomponenten opgeslagen worden in chunky-structuur (1 pixel = 1 byte) of planar-structuur (1 pixel = 1 bit). In JPEG-gecomprimeerde bestanden wordt een JPEG-aanduiding gebruikt in plaats van dit label. Als dit veld niet bestaat, dan wordt de TIFF-standaard van 1 (chunky) aangehouden."
+msgid ""
+"Indicates whether pixel components are recorded in a chunky or planar "
+"format. In JPEG compressed files a JPEG marker is used instead of this tag. "
+"If this field does not exist, the TIFF default of 1 (chunky) is assumed."
+msgstr ""
+"Geeft aan of pixelcomponenten opgeslagen worden in chunky-structuur (1 pixel "
+"= 1 byte) of planar-structuur (1 pixel = 1 bit). In JPEG-gecomprimeerde "
+"bestanden wordt een JPEG-aanduiding gebruikt in plaats van dit label. Als "
+"dit veld niet bestaat, dan wordt de TIFF-standaard van 1 (chunky) "
+"aangehouden."
 
 #: libexif/exif-tag.c:162
 msgid "Resolution Unit"
 msgstr "Resolutieeenheid"
 
 #: libexif/exif-tag.c:163
-msgid "The unit for measuring <XResolution> and <YResolution>. The same unit is used for both <XResolution> and <YResolution>. If the image resolution is unknown, 2 (inches) is designated."
-msgstr "De eenheid van <XResolution> en <YResolution>. Voor <XResolution> en <YResolution> wordt dezelfde eenheid gebruikt. Als de afbeeldingsresolutie onbekend is, wordt 2 (inches) toegewezen."
+msgid ""
+"The unit for measuring <XResolution> and <YResolution>. The same unit is "
+"used for both <XResolution> and <YResolution>. If the image resolution is "
+"unknown, 2 (inches) is designated."
+msgstr ""
+"De eenheid van <XResolution> en <YResolution>. Voor <XResolution> en "
+"<YResolution> wordt dezelfde eenheid gebruikt. Als de afbeeldingsresolutie "
+"onbekend is, wordt 2 (inches) toegewezen."
 
 #: libexif/exif-tag.c:168
 msgid "Transfer Function"
 msgstr "Uitwisselingsfunctie"
 
 #: libexif/exif-tag.c:169
-msgid "A transfer function for the image, described in tabular style. Normally this tag is not necessary, since color space is specified in the color space information tag (<ColorSpace>)."
-msgstr "Een uitwisselingsfunctie voor de afbeelding, uitgedrukt in tabelvorm. Normaal is dit label niet nodig, omdat de kleurruimte opgegeven wordt in het informatielabel (<ColorSpace>)."
+msgid ""
+"A transfer function for the image, described in tabular style. Normally this "
+"tag is not necessary, since color space is specified in the color space "
+"information tag (<ColorSpace>)."
+msgstr ""
+"Een uitwisselingsfunctie voor de afbeelding, uitgedrukt in tabelvorm. "
+"Normaal is dit label niet nodig, omdat de kleurruimte opgegeven wordt in het "
+"informatielabel (<ColorSpace>)."
 
 #: libexif/exif-tag.c:173
 msgid "Software"
 msgstr "Programmatuur"
 
 #: libexif/exif-tag.c:174
-msgid "This tag records the name and version of the software or firmware of the camera or image input device used to generate the image. The detailed format is not specified, but it is recommended that the example shown below be followed. When the field is left blank, it is treated as unknown."
-msgstr "Dit label bevat de naam en versie van de programmatuur of firmware van de camera of het apparaat waarmee de afbeelding gegenereerd is. De gedetailleerde structuur is niet gespecificeerd, maar het wordt aanbevolen het onderstaande voorbeeld te volgen. Als het veld leeg is, wordt het als onbekend behandeld."
+msgid ""
+"This tag records the name and version of the software or firmware of the "
+"camera or image input device used to generate the image. The detailed format "
+"is not specified, but it is recommended that the example shown below be "
+"followed. When the field is left blank, it is treated as unknown."
+msgstr ""
+"Dit label bevat de naam en versie van de programmatuur of firmware van de "
+"camera of het apparaat waarmee de afbeelding gegenereerd is. De "
+"gedetailleerde structuur is niet gespecificeerd, maar het wordt aanbevolen "
+"het onderstaande voorbeeld te volgen. Als het veld leeg is, wordt het als "
+"onbekend behandeld."
 
 #: libexif/exif-tag.c:181
 msgid "Date and Time"
 msgstr "Datum en tijd"
 
 #: libexif/exif-tag.c:182
-msgid "The date and time of image creation. In this standard (EXIF-2.1) it is the date and time the file was changed."
-msgstr "De datum en het tijdstip waarop de afbeelding gemaakt is. In deze standaard (EXIF-2.1) betreft het de datum en het tijdstip waarop het bestand veranderd is."
+msgid ""
+"The date and time of image creation. In this standard (EXIF-2.1) it is the "
+"date and time the file was changed."
+msgstr ""
+"De datum en het tijdstip waarop de afbeelding gemaakt is. In deze standaard "
+"(EXIF-2.1) betreft het de datum en het tijdstip waarop het bestand veranderd "
+"is."
 
 #: libexif/exif-tag.c:185
 msgid "Artist"
 msgstr "Artiest"
 
 #: libexif/exif-tag.c:186
-msgid "This tag records the name of the camera owner, photographer or image creator. The detailed format is not specified, but it is recommended that the information be written as in the example below for ease of Interoperability. When the field is left blank, it is treated as unknown."
-msgstr "Dit label bevat de naam van cameraeigenaar, de fotograaf of de afbeeldingsmaker. De gedetailleerde structuur is niet gespecificeerd, maar het wordt aanbevolen om de informatie te schrijven zoals in het onderstaande voorbeeld in verband met de uitwisselbaarheid. Als het veld leeg is, wordt het als onbekend behandeld."
+msgid ""
+"This tag records the name of the camera owner, photographer or image "
+"creator. The detailed format is not specified, but it is recommended that "
+"the information be written as in the example below for ease of "
+"Interoperability. When the field is left blank, it is treated as unknown."
+msgstr ""
+"Dit label bevat de naam van cameraeigenaar, de fotograaf of de "
+"afbeeldingsmaker. De gedetailleerde structuur is niet gespecificeerd, maar "
+"het wordt aanbevolen om de informatie te schrijven zoals in het onderstaande "
+"voorbeeld in verband met de uitwisselbaarheid. Als het veld leeg is, wordt "
+"het als onbekend behandeld."
 
 #: libexif/exif-tag.c:192 libexif/pentax/mnote-pentax-tag.c:113
 msgid "White Point"
 msgstr "Witpunt"
 
 #: libexif/exif-tag.c:193
-msgid "The chromaticity of the white point of the image. Normally this tag is not necessary, since color space is specified in the color space information tag (<ColorSpace>)."
-msgstr "De chromaticiteit van het afbeeldingswitpunt. Normaal is dit label niet nodig, omdat de kleurruimte opgegeven wordt in het informatielabel (<ColorSpace>)."
+msgid ""
+"The chromaticity of the white point of the image. Normally this tag is not "
+"necessary, since color space is specified in the color space information tag "
+"(<ColorSpace>)."
+msgstr ""
+"De chromaticiteit van het afbeeldingswitpunt. Normaal is dit label niet "
+"nodig, omdat de kleurruimte opgegeven wordt in het informatielabel "
+"(<ColorSpace>)."
 
 #: libexif/exif-tag.c:198
 msgid "Primary Chromaticities"
 msgstr "Primaire chromaticiteit"
 
 #: libexif/exif-tag.c:199
-msgid "The chromaticity of the three primary colors of the image. Normally this tag is not necessary, since color space is specified in the color space information tag (<ColorSpace>)."
-msgstr "De chromaticiteit van de drie primaire afbeeldingskleuren. Normaal is dit label niet nodig, omdat de kleurruimte opgegeven wordt in het informatielabel (<ColorSpace>)."
+msgid ""
+"The chromaticity of the three primary colors of the image. Normally this tag "
+"is not necessary, since color space is specified in the color space "
+"information tag (<ColorSpace>)."
+msgstr ""
+"De chromaticiteit van de drie primaire afbeeldingskleuren. Normaal is dit "
+"label niet nodig, omdat de kleurruimte opgegeven wordt in het "
+"informatielabel (<ColorSpace>)."
 
 #: libexif/exif-tag.c:204
 msgid "Transfer Range"
@@ -2662,55 +2862,122 @@ msgstr "Uitwisselingsbereik"
 
 #: libexif/exif-tag.c:206
 msgid "Defined by Adobe Corporation to enable TIFF Trees within a TIFF file."
-msgstr "Gedefinieerd door Adobe Corporation om TIFF-bomen binnen een TIFF-bestand mogelijk te maken."
+msgstr ""
+"Gedefinieerd door Adobe Corporation om TIFF-bomen binnen een TIFF-bestand "
+"mogelijk te maken."
 
 #: libexif/exif-tag.c:211
 msgid "JPEG Interchange Format"
 msgstr "JPEG uitwisselingsstructuur"
 
 #: libexif/exif-tag.c:212
-msgid "The offset to the start byte (SOI) of JPEG compressed thumbnail data. This is not used for primary image JPEG data."
-msgstr "De verschuiving ten opzichte van de beginbyte (SOI) van JPEG-gecomprimeerde miniatuurgegevens. Dit wordt niet gebruikt voor primaire JPEG-afbeeldingsgegevens."
+msgid ""
+"The offset to the start byte (SOI) of JPEG compressed thumbnail data. This "
+"is not used for primary image JPEG data."
+msgstr ""
+"De verschuiving ten opzichte van de beginbyte (SOI) van JPEG-gecomprimeerde "
+"miniatuurgegevens. Dit wordt niet gebruikt voor primaire JPEG-"
+"afbeeldingsgegevens."
 
 #: libexif/exif-tag.c:217
 msgid "JPEG Interchange Format Length"
 msgstr "Lengte JPEG uitwisselingsstructuur"
 
 #: libexif/exif-tag.c:218
-msgid "The number of bytes of JPEG compressed thumbnail data. This is not used for primary image JPEG data. JPEG thumbnails are not divided but are recorded as a continuous JPEG bitstream from SOI to EOI. Appn and COM markers should not be recorded. Compressed thumbnails must be recorded in no more than 64 Kbytes, including all other data to be recorded in APP1."
-msgstr "Het aantal bytes aan JPEG-gecomprimeerde miniatuurgegevens. Dit wordt niet gebruikt voor primaire JPEG-afbeeldingsgegevens. JPEG-miniaturen worden niet opgedeeld, maar als een continue JPEG-bitstroom van SOI tot EOI vastgelegd. Appn- en COM-aanduidingen mogen niet vastgelegd worden. Gecomprimeerde miniaturen moeten passen in maximaal 64 KBytes, inclusief alle andere gegevens die in APP1 opgenomen moeten worden."
+msgid ""
+"The number of bytes of JPEG compressed thumbnail data. This is not used for "
+"primary image JPEG data. JPEG thumbnails are not divided but are recorded as "
+"a continuous JPEG bitstream from SOI to EOI. Appn and COM markers should not "
+"be recorded. Compressed thumbnails must be recorded in no more than 64 "
+"Kbytes, including all other data to be recorded in APP1."
+msgstr ""
+"Het aantal bytes aan JPEG-gecomprimeerde miniatuurgegevens. Dit wordt niet "
+"gebruikt voor primaire JPEG-afbeeldingsgegevens. JPEG-miniaturen worden niet "
+"opgedeeld, maar als een continue JPEG-bitstroom van SOI tot EOI vastgelegd. "
+"Appn- en COM-aanduidingen mogen niet vastgelegd worden. Gecomprimeerde "
+"miniaturen moeten passen in maximaal 64 KBytes, inclusief alle andere "
+"gegevens die in APP1 opgenomen moeten worden."
 
 #: libexif/exif-tag.c:227
 msgid "YCbCr Coefficients"
 msgstr "YCbCr-coefficiënten"
 
 #: libexif/exif-tag.c:228
-msgid "The matrix coefficients for transformation from RGB to YCbCr image data. No default is given in TIFF; but here the value given in \"Color Space Guidelines\", is used as the default. The color space is declared in a color space information tag, with the default being the value that gives the optimal image characteristics Interoperability this condition."
-msgstr "De matrixcoefficiënten voor de transformatie van RGB- naar YCbCr-afbeeldingsinformatie. Voor TIFF is geen standaard gegeven, maar hier wordt als standaard de waarde gebruikt uit \"Richtlijnen voor kleurruimte\". De kleurruimte is aangekondigd in een kleurruimteinformatielabel, waarbij als standaardwaarde de optimale afbeeldingskarakterstieken voor uitwisseling wordt genomen."
+msgid ""
+"The matrix coefficients for transformation from RGB to YCbCr image data. No "
+"default is given in TIFF; but here the value given in \"Color Space "
+"Guidelines\", is used as the default. The color space is declared in a color "
+"space information tag, with the default being the value that gives the "
+"optimal image characteristics Interoperability this condition."
+msgstr ""
+"De matrixcoefficiënten voor de transformatie van RGB- naar YCbCr-"
+"afbeeldingsinformatie. Voor TIFF is geen standaard gegeven, maar hier wordt "
+"als standaard de waarde gebruikt uit \"Richtlijnen voor kleurruimte\". De "
+"kleurruimte is aangekondigd in een kleurruimteinformatielabel, waarbij als "
+"standaardwaarde de optimale afbeeldingskarakterstieken voor uitwisseling "
+"wordt genomen."
 
 #: libexif/exif-tag.c:237
 msgid "YCbCr Sub-Sampling"
 msgstr "YCbCr-submonster"
 
 #: libexif/exif-tag.c:238
-msgid "The sampling ratio of chrominance components in relation to the luminance component. In JPEG compressed data a JPEG marker is used instead of this tag."
-msgstr "De monsterverhouding van chromatische componenten in relatie tot de belichtingscomponent. In JPEG-gecomprimeerde gegevens wordt een JPEG-aanduiding gebruikt in plaats van dit label."
+msgid ""
+"The sampling ratio of chrominance components in relation to the luminance "
+"component. In JPEG compressed data a JPEG marker is used instead of this tag."
+msgstr ""
+"De monsterverhouding van chromatische componenten in relatie tot de "
+"belichtingscomponent. In JPEG-gecomprimeerde gegevens wordt een JPEG-"
+"aanduiding gebruikt in plaats van dit label."
 
 #: libexif/exif-tag.c:243
 msgid "YCbCr Positioning"
 msgstr "YCbCr-positionering"
 
 #: libexif/exif-tag.c:244
-msgid "The position of chrominance components in relation to the luminance component. This field is designated only for JPEG compressed data or uncompressed YCbCr data. The TIFF default is 1 (centered); but when Y:Cb:Cr = 4:2:2 it is recommended in this standard that 2 (co-sited) be used to record data, in order to improve the image quality when viewed on TV systems. When this field does not exist, the reader shall assume the TIFF default. In the case of Y:Cb:Cr = 4:2:0, the TIFF default (centered) is recommended. If the reader does not have the capability of supporting both kinds of <YCbCrPositioning>, it shall follow the TIFF default regardless of the value in this field. It is preferable that readers be able to support both centered and co-sited positioning."
-msgstr "De positie van chromatische componenten in relatie tot de belichtingscomponent. Dit veld wordt alleen toegekend aan JPEG-gecomprimeerde gegevens of ongecomprimeerde YCrCb-gegevens. De TIFF-standaard bedraagt 1 (gecentreerd), maar indien Y:Cb:Cr = 4:2:2 wordt in deze standaard aanbevolen om 2 (tweezijdig) bij de vastlegging van gegevens te gebruiken om de beeldkwaliteit te verbeteren bij vertoning op TV-systemen. Als dit veld niet bestaat, dan gaat de lezer uit van de TIFF-standaard. In het geval van Y:Cb:Cr = 4:2:0 wordt de TIFF-standaard (gecentreerd) aanbevolen. Als het de lezer ontbreekt aan ondersteuning van beide soorten <YCbCrPositioning>, dan moet het de TIFF-standaard volgen, onafhankelijk van de waarde in dit veld. Het heeft de voorkeur dat lezers zowel gecentreerd als tweezijdig positioneren ondersteunen."
+msgid ""
+"The position of chrominance components in relation to the luminance "
+"component. This field is designated only for JPEG compressed data or "
+"uncompressed YCbCr data. The TIFF default is 1 (centered); but when Y:Cb:Cr "
+"= 4:2:2 it is recommended in this standard that 2 (co-sited) be used to "
+"record data, in order to improve the image quality when viewed on TV "
+"systems. When this field does not exist, the reader shall assume the TIFF "
+"default. In the case of Y:Cb:Cr = 4:2:0, the TIFF default (centered) is "
+"recommended. If the reader does not have the capability of supporting both "
+"kinds of <YCbCrPositioning>, it shall follow the TIFF default regardless of "
+"the value in this field. It is preferable that readers be able to support "
+"both centered and co-sited positioning."
+msgstr ""
+"De positie van chromatische componenten in relatie tot de "
+"belichtingscomponent. Dit veld wordt alleen toegekend aan JPEG-"
+"gecomprimeerde gegevens of ongecomprimeerde YCrCb-gegevens. De TIFF-"
+"standaard bedraagt 1 (gecentreerd), maar indien Y:Cb:Cr = 4:2:2 wordt in "
+"deze standaard aanbevolen om 2 (tweezijdig) bij de vastlegging van gegevens "
+"te gebruiken om de beeldkwaliteit te verbeteren bij vertoning op TV-"
+"systemen. Als dit veld niet bestaat, dan gaat de lezer uit van de TIFF-"
+"standaard. In het geval van Y:Cb:Cr = 4:2:0 wordt de TIFF-standaard "
+"(gecentreerd) aanbevolen. Als het de lezer ontbreekt aan ondersteuning van "
+"beide soorten <YCbCrPositioning>, dan moet het de TIFF-standaard volgen, "
+"onafhankelijk van de waarde in dit veld. Het heeft de voorkeur dat lezers "
+"zowel gecentreerd als tweezijdig positioneren ondersteunen."
 
 #: libexif/exif-tag.c:259
 msgid "Reference Black/White"
 msgstr "Referentie zwart-wit"
 
 #: libexif/exif-tag.c:260
-msgid "The reference black point value and reference white point value. No defaults are given in TIFF, but the values below are given as defaults here. The color space is declared in a color space information tag, with the default being the value that gives the optimal image characteristics Interoperability these conditions."
-msgstr "De referentie zwartpunt- en witpuntwaarde. In TIFF worden geen standaarden gegeven, maar de onderstaande waarden gelden hier als standaard. De kleurruimte wordt aangekondigd in het kleurruimteinformatielabel, waarbij als standaard de waarde van de optimale afbeeldingskarakterstieken voor uitwisseling wordt genomen."
+msgid ""
+"The reference black point value and reference white point value. No defaults "
+"are given in TIFF, but the values below are given as defaults here. The "
+"color space is declared in a color space information tag, with the default "
+"being the value that gives the optimal image characteristics "
+"Interoperability these conditions."
+msgstr ""
+"De referentie zwartpunt- en witpuntwaarde. In TIFF worden geen standaarden "
+"gegeven, maar de onderstaande waarden gelden hier als standaard. De "
+"kleurruimte wordt aangekondigd in het kleurruimteinformatielabel, waarbij "
+"als standaard de waarde van de optimale afbeeldingskarakterstieken voor "
+"uitwisseling wordt genomen."
 
 #: libexif/exif-tag.c:268
 msgid "XML Packet"
@@ -2725,8 +2992,14 @@ msgid "CFA Pattern"
 msgstr "CFA-patroon"
 
 #: libexif/exif-tag.c:284 libexif/exif-tag.c:771
-msgid "Indicates the color filter array (CFA) geometric pattern of the image sensor when a one-chip color area sensor is used. It does not apply to all sensing methods."
-msgstr "Geeft het geometrische patroon aan van de kleurfilterreeks (CFA = Color Filter Array) van de beeldsensor indien een enkele-chip kleurgebiedsensor wordt gebruikt. Het is niet toepasbaar voor alle opnamemethoden."
+msgid ""
+"Indicates the color filter array (CFA) geometric pattern of the image sensor "
+"when a one-chip color area sensor is used. It does not apply to all sensing "
+"methods."
+msgstr ""
+"Geeft het geometrische patroon aan van de kleurfilterreeks (CFA = Color "
+"Filter Array) van de beeldsensor indien een enkele-chip kleurgebiedsensor "
+"wordt gebruikt. Het is niet toepasbaar voor alle opnamemethoden."
 
 #: libexif/exif-tag.c:288
 msgid "Battery Level"
@@ -2737,8 +3010,39 @@ msgid "Copyright"
 msgstr "Copyright"
 
 #: libexif/exif-tag.c:290
-msgid "Copyright information. In this standard the tag is used to indicate both the photographer and editor copyrights. It is the copyright notice of the person or organization claiming rights to the image. The Interoperability copyright statement including date and rights should be written in this field; e.g., \"Copyright, John Smith, 19xx. All rights reserved.\". In this standard the field records both the photographer and editor copyrights, with each recorded in a separate part of the statement. When there is a clear distinction between the photographer and editor copyrights, these are to be written in the order of photographer followed by editor copyright, separated by NULL (in this case, since the statement also ends with a NULL, there are two NULL codes) (see example 1). When only the photographer is given, it is terminated by one NULL code (see example 2). When only the editor copyright is given, the photographer copyright part consists of one space followed by a terminating NULL code, then the editor copyright is given (see example 3). When the field is left blank, it is treated as unknown."
-msgstr "Copyright-informatie. In deze standaard wordt het label gebruikt voor de copyrights van zowel de fotograaf als de bewerker. Het betreft de copyright-kennisgeving van de persoon of organisatie die het recht op de afbeelding claimt. De copyrightverklaring van interoperabiliteit inclusief datum en rechten moeten in dit veld worden opgenomen, bijvoorbeeld: \"Copyright, Klaas Bourtange, 2008. Alle rechten voorbehouden.\". In deze standaard worden zowel de fotograaf- als de bewerkerrechten vastgelegd, ieder in een apart deel van de verklaring. Als er een duidelijk onderscheid is tussen de rechten van de fotograaf en de bewerker, dan moeten deze in de volgorde fotograaf, bewerker worden geschreven, gescheiden door NUL (in dit geval zijn er twee NUL-codes, omdat de verklaring ook eindigt met een NUL-code), (zie voorbeeld 1). Als alleen de fotograaf genoemd wordt, dan wordt dit afgesloten met één NUL-code (zie voorbeeld 2). Bij slechts de bewerkerverklaring bestaat het deel van de fotograaf uit een spatie gevolgd door de afsluitende NUL-code waarna het bewerker-copyright volgt (zie voorbeeld 3). Als het veld leeg is, wordt het als onbekend beschouwd."
+msgid ""
+"Copyright information. In this standard the tag is used to indicate both the "
+"photographer and editor copyrights. It is the copyright notice of the person "
+"or organization claiming rights to the image. The Interoperability copyright "
+"statement including date and rights should be written in this field; e.g., "
+"\"Copyright, John Smith, 19xx. All rights reserved.\". In this standard the "
+"field records both the photographer and editor copyrights, with each "
+"recorded in a separate part of the statement. When there is a clear "
+"distinction between the photographer and editor copyrights, these are to be "
+"written in the order of photographer followed by editor copyright, separated "
+"by NULL (in this case, since the statement also ends with a NULL, there are "
+"two NULL codes) (see example 1). When only the photographer is given, it is "
+"terminated by one NULL code (see example 2). When only the editor copyright "
+"is given, the photographer copyright part consists of one space followed by "
+"a terminating NULL code, then the editor copyright is given (see example 3). "
+"When the field is left blank, it is treated as unknown."
+msgstr ""
+"Copyright-informatie. In deze standaard wordt het label gebruikt voor de "
+"copyrights van zowel de fotograaf als de bewerker. Het betreft de copyright-"
+"kennisgeving van de persoon of organisatie die het recht op de afbeelding "
+"claimt. De copyrightverklaring van interoperabiliteit inclusief datum en "
+"rechten moeten in dit veld worden opgenomen, bijvoorbeeld: \"Copyright, "
+"Klaas Bourtange, 2008. Alle rechten voorbehouden.\". In deze standaard "
+"worden zowel de fotograaf- als de bewerkerrechten vastgelegd, ieder in een "
+"apart deel van de verklaring. Als er een duidelijk onderscheid is tussen de "
+"rechten van de fotograaf en de bewerker, dan moeten deze in de volgorde "
+"fotograaf, bewerker worden geschreven, gescheiden door NUL (in dit geval "
+"zijn er twee NUL-codes, omdat de verklaring ook eindigt met een NUL-code), "
+"(zie voorbeeld 1). Als alleen de fotograaf genoemd wordt, dan wordt dit "
+"afgesloten met één NUL-code (zie voorbeeld 2). Bij slechts de "
+"bewerkerverklaring bestaat het deel van de fotograaf uit een spatie gevolgd "
+"door de afsluitende NUL-code waarna het bewerker-copyright volgt (zie "
+"voorbeeld 3). Als het veld leeg is, wordt het als onbekend beschouwd."
 
 #: libexif/exif-tag.c:312
 msgid "Exposure time, given in seconds (sec)."
@@ -2753,132 +3057,239 @@ msgid "Image Resources Block"
 msgstr "Blok met afbeeldingsbronnen"
 
 #: libexif/exif-tag.c:322
-msgid "A pointer to the Exif IFD. Interoperability, Exif IFD has the same structure as that of the IFD specified in TIFF. ordinarily, however, it does not contain image data as in the case of TIFF."
-msgstr "Een verwijzer naar de Exif IFD. Interoperabiliteit, Exif IFD heeft dezelfde structuur als die van de IFD opgegeven in TIFF. Normaal gesproken bevat het echter geen afbeeldingsgegevens, zoals in het geval van TIFF."
+msgid ""
+"A pointer to the Exif IFD. Interoperability, Exif IFD has the same structure "
+"as that of the IFD specified in TIFF. ordinarily, however, it does not "
+"contain image data as in the case of TIFF."
+msgstr ""
+"Een verwijzer naar de Exif IFD. Interoperabiliteit, Exif IFD heeft dezelfde "
+"structuur als die van de IFD opgegeven in TIFF. Normaal gesproken bevat het "
+"echter geen afbeeldingsgegevens, zoals in het geval van TIFF."
 
 #: libexif/exif-tag.c:330
 msgid "Exposure Program"
 msgstr "Belichtingsprogramma"
 
 #: libexif/exif-tag.c:331
-msgid "The class of the program used by the camera to set exposure when the picture is taken."
-msgstr "De programmaklasse die gebruikt wordt door de camera om de belichting in te stellen bij het nemen van de foto."
+msgid ""
+"The class of the program used by the camera to set exposure when the picture "
+"is taken."
+msgstr ""
+"De programmaklasse die gebruikt wordt door de camera om de belichting in te "
+"stellen bij het nemen van de foto."
 
 #: libexif/exif-tag.c:335
 msgid "Spectral Sensitivity"
 msgstr "Spectrale gevoeligheid"
 
 #: libexif/exif-tag.c:336
-msgid "Indicates the spectral sensitivity of each channel of the camera used. The tag value is an ASCII string compatible with the standard developed by the ASTM Technical Committee."
-msgstr "Geeft de spectrale gevoeligheid van ieder kanaal van de gebruikte camera aan. De labelwaarde is een ASCII-tekenreeks compatibel met de standaard zoals die ontwikkeld is door de ASTM Technical Committee."
+msgid ""
+"Indicates the spectral sensitivity of each channel of the camera used. The "
+"tag value is an ASCII string compatible with the standard developed by the "
+"ASTM Technical Committee."
+msgstr ""
+"Geeft de spectrale gevoeligheid van ieder kanaal van de gebruikte camera "
+"aan. De labelwaarde is een ASCII-tekenreeks compatibel met de standaard "
+"zoals die ontwikkeld is door de ASTM Technical Committee."
 
 #: libexif/exif-tag.c:342
-msgid "A pointer to the GPS Info IFD. The Interoperability structure of the GPS Info IFD, like that of Exif IFD, has no image data."
-msgstr "Een verwijzer naar de GPS-informatie IFD. De interoperabiliteitsstructuur van de GPS-informatie IFD, net zoals bij de Exif IFD, bevat geen afbeeldingsgegevens."
+msgid ""
+"A pointer to the GPS Info IFD. The Interoperability structure of the GPS "
+"Info IFD, like that of Exif IFD, has no image data."
+msgstr ""
+"Een verwijzer naar de GPS-informatie IFD. De interoperabiliteitsstructuur "
+"van de GPS-informatie IFD, net zoals bij de Exif IFD, bevat geen "
+"afbeeldingsgegevens."
 
 #: libexif/exif-tag.c:347
 msgid "GPS tag version"
 msgstr "GPS-labelversie"
 
 #: libexif/exif-tag.c:348
-msgid "Indicates the version of <GPSInfoIFD>. The version is given as 2.0.0.0. This tag is mandatory when <GPSInfo> tag is present. (Note: The <GPSVersionID> tag is given in bytes, unlike the <ExifVersion> tag. When the version is 2.0.0.0, the tag value is 02000000.H)."
-msgstr "Geeft de versie van <GPSInfoIFD> weer. De versie wordt gegevens als 2.0.0.0. Dit label is verplicht als het <GPSInfo>-label aanwezig is. (Merk op: het <GPSVersionID>-label wordt uitgedrukt in bytes, in tegenstelling tot het <ExifVersion>-label. Als de versie 2.0.0.0 is, dan heeft het label de waarde 02000000.H)."
+msgid ""
+"Indicates the version of <GPSInfoIFD>. The version is given as 2.0.0.0. This "
+"tag is mandatory when <GPSInfo> tag is present. (Note: The <GPSVersionID> "
+"tag is given in bytes, unlike the <ExifVersion> tag. When the version is "
+"2.0.0.0, the tag value is 02000000.H)."
+msgstr ""
+"Geeft de versie van <GPSInfoIFD> weer. De versie wordt gegevens als 2.0.0.0. "
+"Dit label is verplicht als het <GPSInfo>-label aanwezig is. (Merk op: het "
+"<GPSVersionID>-label wordt uitgedrukt in bytes, in tegenstelling tot het "
+"<ExifVersion>-label. Als de versie 2.0.0.0 is, dan heeft het label de waarde "
+"02000000.H)."
 
 #: libexif/exif-tag.c:353
 msgid "North or South Latitude"
 msgstr "Noorder- of zuiderbreedte"
 
 #: libexif/exif-tag.c:354
-msgid "Indicates whether the latitude is north or south latitude. The ASCII value 'N' indicates north latitude, and 'S' is south latitude."
-msgstr "Geeft aan of de breedtegraad de noorder- of zuiderbreedte betreft. De ASCII-waarde 'N' verwijst naar noorderbreedte en 'S' naar zuiderbreedte."
+msgid ""
+"Indicates whether the latitude is north or south latitude. The ASCII value "
+"'N' indicates north latitude, and 'S' is south latitude."
+msgstr ""
+"Geeft aan of de breedtegraad de noorder- of zuiderbreedte betreft. De ASCII-"
+"waarde 'N' verwijst naar noorderbreedte en 'S' naar zuiderbreedte."
 
 #: libexif/exif-tag.c:357
 msgid "Latitude"
 msgstr "Breedtegraad"
 
 #: libexif/exif-tag.c:358
-msgid "Indicates the latitude. The latitude is expressed as three RATIONAL values giving the degrees, minutes, and seconds, respectively. When degrees, minutes and seconds are expressed, the format is dd/1,mm/1,ss/1. When degrees and minutes are used and, for example, fractions of minutes are given up to two decimal places, the format is dd/1,mmmm/100,0/1."
-msgstr "Geeft de breedtegraad aan. De breedtegraad wordt uitgedrukt als drie reële waarden in respectievelijk graden, minuten en seconden. Als graden, minuten en seconden worden weergegeven, dan is de opmaak dd/1,mm/1,ss/1. Als graden en minuten worden gebruikt en, bijvoorbeeld, delen van minuten worden weergegeven tot twee decimale posities, dan is de opmaak dd/1,mmmm/100,0/1"
+msgid ""
+"Indicates the latitude. The latitude is expressed as three RATIONAL values "
+"giving the degrees, minutes, and seconds, respectively. When degrees, "
+"minutes and seconds are expressed, the format is dd/1,mm/1,ss/1. When "
+"degrees and minutes are used and, for example, fractions of minutes are "
+"given up to two decimal places, the format is dd/1,mmmm/100,0/1."
+msgstr ""
+"Geeft de breedtegraad aan. De breedtegraad wordt uitgedrukt als drie reële "
+"waarden in respectievelijk graden, minuten en seconden. Als graden, minuten "
+"en seconden worden weergegeven, dan is de opmaak dd/1,mm/1,ss/1. Als graden "
+"en minuten worden gebruikt en, bijvoorbeeld, delen van minuten worden "
+"weergegeven tot twee decimale posities, dan is de opmaak dd/1,mmmm/100,0/1"
 
 #: libexif/exif-tag.c:365
 msgid "East or West Longitude"
 msgstr "Oosterlijke of westerlijke lengtegraad"
 
 #: libexif/exif-tag.c:366
-msgid "Indicates whether the longitude is east or west longitude. ASCII 'E' indicates east longitude, and 'W' is west longitude."
-msgstr "Geeft aan of de lengtegraad de oosterlijke of de westerlijke betreft. ASCII 'E' betekent oosterlengte en 'W' is westerlengte."
+msgid ""
+"Indicates whether the longitude is east or west longitude. ASCII 'E' "
+"indicates east longitude, and 'W' is west longitude."
+msgstr ""
+"Geeft aan of de lengtegraad de oosterlijke of de westerlijke betreft. ASCII "
+"'E' betekent oosterlengte en 'W' is westerlengte."
 
 #: libexif/exif-tag.c:369
 msgid "Longitude"
 msgstr "Lengtegraad"
 
 #: libexif/exif-tag.c:370
-msgid "Indicates the longitude. The longitude is expressed as three RATIONAL values giving the degrees, minutes, and seconds, respectively. When degrees, minutes and seconds are expressed, the format is ddd/1,mm/1,ss/1. When degrees and minutes are used and, for example, fractions of minutes are given up to two decimal places, the format is ddd/1,mmmm/100,0/1."
-msgstr "Geeft de lengtegraad aan. De lengtegraad wordt uitgedrukt als drie reële waarden in respectievelijk graden, minuten en seconden. Als graden, minuten en seconden worden weergegeven, dan is de opmaak dd/1,mm/1,ss/1. Als graden en minuten worden gebruikt en, bijvoorbeeld, delen van minuten worden weergegeven tot twee decimale posities, dan is de opmaak dd/1,mmmm/100,0/1"
+msgid ""
+"Indicates the longitude. The longitude is expressed as three RATIONAL values "
+"giving the degrees, minutes, and seconds, respectively. When degrees, "
+"minutes and seconds are expressed, the format is ddd/1,mm/1,ss/1. When "
+"degrees and minutes are used and, for example, fractions of minutes are "
+"given up to two decimal places, the format is ddd/1,mmmm/100,0/1."
+msgstr ""
+"Geeft de lengtegraad aan. De lengtegraad wordt uitgedrukt als drie reële "
+"waarden in respectievelijk graden, minuten en seconden. Als graden, minuten "
+"en seconden worden weergegeven, dan is de opmaak dd/1,mm/1,ss/1. Als graden "
+"en minuten worden gebruikt en, bijvoorbeeld, delen van minuten worden "
+"weergegeven tot twee decimale posities, dan is de opmaak dd/1,mmmm/100,0/1"
 
 #: libexif/exif-tag.c:377
 msgid "Altitude reference"
 msgstr "Hoogtereferentie"
 
 #: libexif/exif-tag.c:378
-msgid "Indicates the altitude used as the reference altitude. If the reference is sea level and the altitude is above sea level, 0 is given. If the altitude is below sea level, a value of 1 is given and the altitude is indicated as an absolute value in the GSPAltitude tag. The reference unit is meters. Note that this tag is BYTE type, unlike other reference tags."
-msgstr "Geeft de hoogte aan die gebruikt wordt als referentiehoogte. Als de referentie het zeeniveau is de hoogte is boven zeeniveau, dan wordt 0 gegeven. Als de hoogte onder zeeniveau is, wordt een waarde van 1 gegeven en de hoogte is weergegeven als een absolute waarde in het GPSAltitude-label. De referentieeenheid is meters. Merk op dat dit label van het BYTE-soort is, dit in tegenstelling tot andere referentielabels."
+msgid ""
+"Indicates the altitude used as the reference altitude. If the reference is "
+"sea level and the altitude is above sea level, 0 is given. If the altitude "
+"is below sea level, a value of 1 is given and the altitude is indicated as "
+"an absolute value in the GSPAltitude tag. The reference unit is meters. Note "
+"that this tag is BYTE type, unlike other reference tags."
+msgstr ""
+"Geeft de hoogte aan die gebruikt wordt als referentiehoogte. Als de "
+"referentie het zeeniveau is de hoogte is boven zeeniveau, dan wordt 0 "
+"gegeven. Als de hoogte onder zeeniveau is, wordt een waarde van 1 gegeven en "
+"de hoogte is weergegeven als een absolute waarde in het GPSAltitude-label. "
+"De referentieeenheid is meters. Merk op dat dit label van het BYTE-soort is, "
+"dit in tegenstelling tot andere referentielabels."
 
 #: libexif/exif-tag.c:384
 msgid "Altitude"
 msgstr "Hoogte"
 
 #: libexif/exif-tag.c:385
-msgid "Indicates the altitude based on the reference in GPSAltitudeRef. Altitude is expressed as one RATIONAL value. The reference unit is meters."
-msgstr "Geeft de hoogte aan ten opzichte van de referentie in GPSAltitudeRef. Hoogte is uitgedrukt als één rationele waarde. De referentieeenheid is in meters."
+msgid ""
+"Indicates the altitude based on the reference in GPSAltitudeRef. Altitude is "
+"expressed as one RATIONAL value. The reference unit is meters."
+msgstr ""
+"Geeft de hoogte aan ten opzichte van de referentie in GPSAltitudeRef. Hoogte "
+"is uitgedrukt als één rationele waarde. De referentieeenheid is in meters."
 
 #: libexif/exif-tag.c:388
 msgid "GPS time (atomic clock)"
 msgstr "GPS-tijd (atoomklok)"
 
 #: libexif/exif-tag.c:389
-msgid "Indicates the time as UTC (Coordinated Universal Time). TimeStamp is expressed as three RATIONAL values giving the hour, minute, and second."
-msgstr "Geeft de tijd als UTC (Coordinated Universal Time). Tijdcode is uitgedrukt als drie reële waarden voor uur, minuut en seconde."
+msgid ""
+"Indicates the time as UTC (Coordinated Universal Time). TimeStamp is "
+"expressed as three RATIONAL values giving the hour, minute, and second."
+msgstr ""
+"Geeft de tijd als UTC (Coordinated Universal Time). Tijdcode is uitgedrukt "
+"als drie reële waarden voor uur, minuut en seconde."
 
 #: libexif/exif-tag.c:392
 msgid "GPS satellites used for measurement"
 msgstr "GPS-satallieten gebruikt voor meting"
 
 #: libexif/exif-tag.c:393
-msgid "Indicates the GPS satellites used for measurements. This tag can be used to describe the number of satellites, their ID number, angle of elevation, azimuth, SNR and other information in ASCII notation. The format is not specified. If the GPS receiver is incapable of taking measurements, value of the tag shall be set to NULL."
-msgstr "Geeft de GPS-satallieten gebruikt bij metingen. Dit label kan benut worden om het aantal satallieten, hun ID-nummer, elivatie, azimut, SNR en andere informatie in ASCII-notatie te beschrijven. De wijze waarop is niet vastgelegd. Als de GPS-ontvanger niet in staat is metingen vast te leggen, dan moet de waarde van het label op NUL gezet worden."
+msgid ""
+"Indicates the GPS satellites used for measurements. This tag can be used to "
+"describe the number of satellites, their ID number, angle of elevation, "
+"azimuth, SNR and other information in ASCII notation. The format is not "
+"specified. If the GPS receiver is incapable of taking measurements, value of "
+"the tag shall be set to NULL."
+msgstr ""
+"Geeft de GPS-satallieten gebruikt bij metingen. Dit label kan benut worden "
+"om het aantal satallieten, hun ID-nummer, elivatie, azimut, SNR en andere "
+"informatie in ASCII-notatie te beschrijven. De wijze waarop is niet "
+"vastgelegd. Als de GPS-ontvanger niet in staat is metingen vast te leggen, "
+"dan moet de waarde van het label op NUL gezet worden."
 
 #: libexif/exif-tag.c:399
 msgid "GPS receiver status"
 msgstr "Status GPS-ontvanger"
 
 #: libexif/exif-tag.c:400
-msgid "Indicates the status of the GPS receiver when the image is recorded. 'A' means measurement is in progress, and 'V' means the measurement is Interoperability."
-msgstr "Geeft de status van de GPS-ontvanger als de opname is vastgelegd. 'A' betekent dat de meting gaande is en 'V' zegt dat de meting interoperabel is."
+msgid ""
+"Indicates the status of the GPS receiver when the image is recorded. 'A' "
+"means measurement is in progress, and 'V' means the measurement is "
+"Interoperability."
+msgstr ""
+"Geeft de status van de GPS-ontvanger als de opname is vastgelegd. 'A' "
+"betekent dat de meting gaande is en 'V' zegt dat de meting interoperabel is."
 
 #: libexif/exif-tag.c:403
 msgid "GPS measurement mode"
 msgstr "GPS-meetmodus"
 
 #: libexif/exif-tag.c:404
-msgid "Indicates the GPS measurement mode. '2' means two-dimensional measurement and '3' means three-dimensional measurement is in progress."
-msgstr "Geeft de GPS-meetmodus. '2' staat voor tweedimensionale meting en '3' voor driedimensionaal."
+msgid ""
+"Indicates the GPS measurement mode. '2' means two-dimensional measurement "
+"and '3' means three-dimensional measurement is in progress."
+msgstr ""
+"Geeft de GPS-meetmodus. '2' staat voor tweedimensionale meting en '3' voor "
+"driedimensionaal."
 
 #: libexif/exif-tag.c:407
 msgid "Measurement precision"
 msgstr "Meetprecisie"
 
 #: libexif/exif-tag.c:408
-msgid "Indicates the GPS DOP (data degree of precision). An HDOP value is written during two-dimensional measurement, and PDOP during three-dimensional measurement."
-msgstr "Geeft de GPS-DOP (Degree Of Precision, mate van nauwkeurigheid). Een HDOP-waarde wordt weggeschreven tijdens tweedimensionale metingen en PDOP tijdens driedimensionale metingen."
+msgid ""
+"Indicates the GPS DOP (data degree of precision). An HDOP value is written "
+"during two-dimensional measurement, and PDOP during three-dimensional "
+"measurement."
+msgstr ""
+"Geeft de GPS-DOP (Degree Of Precision, mate van nauwkeurigheid). Een HDOP-"
+"waarde wordt weggeschreven tijdens tweedimensionale metingen en PDOP tijdens "
+"driedimensionale metingen."
 
 #: libexif/exif-tag.c:411
 msgid "Speed unit"
 msgstr "Snelheidseenheid"
 
 #: libexif/exif-tag.c:412
-msgid "Indicates the unit used to express the GPS receiver speed of movement. 'K', 'M' and 'N' represent kilometers per hour, miles per hour, and knots."
-msgstr "Geeft de eenheid waarin de snelheid of beweging van de GPS-ontvanger wordt uitgedrukt. 'K', 'M' en 'N' staan respectievelijk voor kilometers per uur, mijlen per uur en knopen."
+msgid ""
+"Indicates the unit used to express the GPS receiver speed of movement. 'K', "
+"'M' and 'N' represent kilometers per hour, miles per hour, and knots."
+msgstr ""
+"Geeft de eenheid waarin de snelheid of beweging van de GPS-ontvanger wordt "
+"uitgedrukt. 'K', 'M' en 'N' staan respectievelijk voor kilometers per uur, "
+"mijlen per uur en knopen."
 
 #: libexif/exif-tag.c:415
 msgid "Speed of GPS receiver"
@@ -2893,96 +3304,166 @@ msgid "Reference for direction of movement"
 msgstr "Referentie voor bewegingsrichting"
 
 #: libexif/exif-tag.c:418
-msgid "Indicates the reference for giving the direction of GPS receiver movement. 'T' denotes true direction and 'M' is magnetic direction."
-msgstr "De referentie waarmee de beweegrichting van de GPS-ontvanger tijdens de opname wordt aangegeven. 'T' betekent het ware noorden en 'M' is het magnetische noorden."
+msgid ""
+"Indicates the reference for giving the direction of GPS receiver movement. "
+"'T' denotes true direction and 'M' is magnetic direction."
+msgstr ""
+"De referentie waarmee de beweegrichting van de GPS-ontvanger tijdens de "
+"opname wordt aangegeven. 'T' betekent het ware noorden en 'M' is het "
+"magnetische noorden."
 
 #: libexif/exif-tag.c:421
 msgid "Direction of movement"
 msgstr "Bewegingsrichting"
 
 #: libexif/exif-tag.c:422
-msgid "Indicates the direction of GPS receiver movement. The range of values is from 0.00 to 359.99."
-msgstr "Geeft de beweegrichting van de GPS-ontvanger. Het bereik ligt tussen de 0.00 en 359.99."
+msgid ""
+"Indicates the direction of GPS receiver movement. The range of values is "
+"from 0.00 to 359.99."
+msgstr ""
+"Geeft de beweegrichting van de GPS-ontvanger. Het bereik ligt tussen de 0.00 "
+"en 359.99."
 
 #: libexif/exif-tag.c:424
 msgid "GPS Img Direction Reference"
 msgstr "GPS-referentie voor afbeeldingsrichting"
 
 #: libexif/exif-tag.c:425
-msgid "Indicates the reference for giving the direction of the image when it is captured. 'T' denotes true direction and 'M' is magnetic direction."
-msgstr "De referentie waarmee de richting van de afbeelding tijdens de opname wordt aangegeven. 'T' betekent het ware noorden en 'M' is het magnetische noorden."
+msgid ""
+"Indicates the reference for giving the direction of the image when it is "
+"captured. 'T' denotes true direction and 'M' is magnetic direction."
+msgstr ""
+"De referentie waarmee de richting van de afbeelding tijdens de opname wordt "
+"aangegeven. 'T' betekent het ware noorden en 'M' is het magnetische noorden."
 
 #: libexif/exif-tag.c:427
 msgid "GPS Img Direction"
 msgstr "GPS afbeeldingsrichting"
 
 #: libexif/exif-tag.c:428
-msgid "Indicates the direction of the image when it was captured. The range of values is from 0.00 to 359.99."
-msgstr "Geeft de richting van de afbeelding tijdens de opname. Het bereik ligt tussen de 0.00 en 359.99."
+msgid ""
+"Indicates the direction of the image when it was captured. The range of "
+"values is from 0.00 to 359.99."
+msgstr ""
+"Geeft de richting van de afbeelding tijdens de opname. Het bereik ligt "
+"tussen de 0.00 en 359.99."
 
 #: libexif/exif-tag.c:430
 msgid "Geodetic survey data used"
 msgstr "Geodetische onderzoeksgegevens gebruikt"
 
 #: libexif/exif-tag.c:431
-msgid "Indicates the geodetic survey data used by the GPS receiver. If the survey data is restricted to Japan, the value of this tag is 'TOKYO' or 'WGS-84'. If a GPS Info tag is recorded, it is strongly recommended that this tag be recorded."
-msgstr "Geeft de geodetische onderzoeksgegevens zoals door de GPS-ontvanger wordt gebruikt. Als de onderzoeksgegevens zich beperken tot Japan, dan is de waarde van dit label 'TOKYO' of 'WGS-84'. Als een GPS-informatielabel wordt geregistreerd is het sterk aanbevolen dit label op te slaan."
+msgid ""
+"Indicates the geodetic survey data used by the GPS receiver. If the survey "
+"data is restricted to Japan, the value of this tag is 'TOKYO' or 'WGS-84'. "
+"If a GPS Info tag is recorded, it is strongly recommended that this tag be "
+"recorded."
+msgstr ""
+"Geeft de geodetische onderzoeksgegevens zoals door de GPS-ontvanger wordt "
+"gebruikt. Als de onderzoeksgegevens zich beperken tot Japan, dan is de "
+"waarde van dit label 'TOKYO' of 'WGS-84'. Als een GPS-informatielabel wordt "
+"geregistreerd is het sterk aanbevolen dit label op te slaan."
 
 #: libexif/exif-tag.c:435
 msgid "Reference for latitude of destination"
 msgstr "Referentie voor lengtegraad van bestemming"
 
 #: libexif/exif-tag.c:436
-msgid "Indicates whether the latitude of the destination point is north or south latitude. The ASCII value 'N' indicates north latitude, and 'S' is south latitude."
-msgstr "Geeft aan of de breedtegraad de noorder- of zuiderbreedte betreft. De ASCII-waarde 'N' verwijst naar noorderbreedte en 'S' naar zuiderbreedte."
+msgid ""
+"Indicates whether the latitude of the destination point is north or south "
+"latitude. The ASCII value 'N' indicates north latitude, and 'S' is south "
+"latitude."
+msgstr ""
+"Geeft aan of de breedtegraad de noorder- of zuiderbreedte betreft. De ASCII-"
+"waarde 'N' verwijst naar noorderbreedte en 'S' naar zuiderbreedte."
 
 #: libexif/exif-tag.c:439
 msgid "Latitude of destination"
 msgstr "Lengtegraad van bestemming"
 
 #: libexif/exif-tag.c:440
-msgid "Indicates the latitude of the destination point. The latitude is expressed as three RATIONAL values giving the degrees, minutes, and seconds, respectively. If latitude is expressed as degrees, minutes and seconds, a typical format would be dd/1,mm/1,ss/1. When degrees and minutes are used and, for example, fractions of minutes are given up to two decimal places, the format would be dd/1,mmmm/100,0/1."
-msgstr "Geeft de breedtegraad van de bestemming aan. De breedtegraad wordt uitgedrukt als drie reële waarden in respectievelijk graden, minuten en seconden. Als graden, minuten en seconden worden weergegeven, dan is de opmaak dd/1,mm/1,ss/1. Als graden en minuten worden gebruikt en, bijvoorbeeld, delen van minuten worden weergegeven tot in twee decimale posities, dan is de opmaak dd/1,mmmm/100,0/1"
+msgid ""
+"Indicates the latitude of the destination point. The latitude is expressed "
+"as three RATIONAL values giving the degrees, minutes, and seconds, "
+"respectively. If latitude is expressed as degrees, minutes and seconds, a "
+"typical format would be dd/1,mm/1,ss/1. When degrees and minutes are used "
+"and, for example, fractions of minutes are given up to two decimal places, "
+"the format would be dd/1,mmmm/100,0/1."
+msgstr ""
+"Geeft de breedtegraad van de bestemming aan. De breedtegraad wordt "
+"uitgedrukt als drie reële waarden in respectievelijk graden, minuten en "
+"seconden. Als graden, minuten en seconden worden weergegeven, dan is de "
+"opmaak dd/1,mm/1,ss/1. Als graden en minuten worden gebruikt en, "
+"bijvoorbeeld, delen van minuten worden weergegeven tot in twee decimale "
+"posities, dan is de opmaak dd/1,mmmm/100,0/1"
 
 #: libexif/exif-tag.c:447
 msgid "Reference for longitude of destination"
 msgstr "Referentie voor breedtegraad van bestemming"
 
 #: libexif/exif-tag.c:448
-msgid "Indicates whether the longitude of the destination point is east or west longitude. ASCII 'E' indicates east longitude, and 'W' is west longitude."
-msgstr "Geeft aan of de lengtegraad de oosterlijke of de westerlijke betreft. ASCII 'E' betekent oosterlengte en 'W' is westerlengte."
+msgid ""
+"Indicates whether the longitude of the destination point is east or west "
+"longitude. ASCII 'E' indicates east longitude, and 'W' is west longitude."
+msgstr ""
+"Geeft aan of de lengtegraad de oosterlijke of de westerlijke betreft. ASCII "
+"'E' betekent oosterlengte en 'W' is westerlengte."
 
 #: libexif/exif-tag.c:451
 msgid "Longitude of destination"
 msgstr "Breedtegraad van bestemming"
 
 #: libexif/exif-tag.c:452
-msgid "Indicates the longitude of the destination point. The longitude is expressed as three RATIONAL values giving the degrees, minutes, and seconds, respectively. If longitude is expressed as degrees, minutes and seconds, a typical format would be ddd/1,mm/1,ss/1. When degrees and minutes are used and, for example, fractions of minutes are given up to two decimal places, the format would be ddd/1,mmmm/100,0/1."
-msgstr "Geeft de lengtegraad van de bestemming aan. De lengtegraad wordt uitgedrukt als drie reële waarden in respectievelijk graden, minuten en seconden. Als graden, minuten en seconden worden weergegeven, dan is de opmaak dd/1,mm/1,ss/1. Als graden en minuten worden gebruikt en, bijvoorbeeld, delen van minuten worden weergegeven in twee decimale posities, dan is de opmaak dd/1,mmmm/100,0/1"
+msgid ""
+"Indicates the longitude of the destination point. The longitude is expressed "
+"as three RATIONAL values giving the degrees, minutes, and seconds, "
+"respectively. If longitude is expressed as degrees, minutes and seconds, a "
+"typical format would be ddd/1,mm/1,ss/1. When degrees and minutes are used "
+"and, for example, fractions of minutes are given up to two decimal places, "
+"the format would be ddd/1,mmmm/100,0/1."
+msgstr ""
+"Geeft de lengtegraad van de bestemming aan. De lengtegraad wordt uitgedrukt "
+"als drie reële waarden in respectievelijk graden, minuten en seconden. Als "
+"graden, minuten en seconden worden weergegeven, dan is de opmaak dd/1,mm/1,"
+"ss/1. Als graden en minuten worden gebruikt en, bijvoorbeeld, delen van "
+"minuten worden weergegeven in twee decimale posities, dan is de opmaak dd/1,"
+"mmmm/100,0/1"
 
 #: libexif/exif-tag.c:460
 msgid "Reference for bearing of destination"
 msgstr "Referentie voor richting van bestemming"
 
 #: libexif/exif-tag.c:461
-msgid "Indicates the reference used for giving the bearing to the destination point. 'T' denotes true direction and 'M' is magnetic direction."
-msgstr "De referentie waarmee de richting van de afbeelding tijdens de opname wordt aangegeven. 'T' betekent het ware noorden en 'M' is het magnetische noorden."
+msgid ""
+"Indicates the reference used for giving the bearing to the destination "
+"point. 'T' denotes true direction and 'M' is magnetic direction."
+msgstr ""
+"De referentie waarmee de richting van de afbeelding tijdens de opname wordt "
+"aangegeven. 'T' betekent het ware noorden en 'M' is het magnetische noorden."
 
 #: libexif/exif-tag.c:464
 msgid "Bearing of destination"
 msgstr "Richting van bestemming"
 
 #: libexif/exif-tag.c:465
-msgid "Indicates the bearing to the destination point. The range of values is from 0.00 to 359.99."
-msgstr "Geeft de richting naar de bestemming. Het bereik ligt tussen de 0.00 en 359.99."
+msgid ""
+"Indicates the bearing to the destination point. The range of values is from "
+"0.00 to 359.99."
+msgstr ""
+"Geeft de richting naar de bestemming. Het bereik ligt tussen de 0.00 en "
+"359.99."
 
 #: libexif/exif-tag.c:467
 msgid "Reference for distance to destination"
 msgstr "Referentie voor afstand tot bestemming"
 
 #: libexif/exif-tag.c:468
-msgid "Indicates the unit used to express the distance to the destination point. 'K', 'M' and 'N' represent kilometers, miles and knots."
-msgstr "Geeft de eenheid waarin de afstand tot de bestemming wordt uitgedrukt. 'K', 'M' en 'N' staan voor respectievelijk kilometers, mijlen en zeemijlen."
+msgid ""
+"Indicates the unit used to express the distance to the destination point. "
+"'K', 'M' and 'N' represent kilometers, miles and knots."
+msgstr ""
+"Geeft de eenheid waarin de afstand tot de bestemming wordt uitgedrukt. 'K', "
+"'M' en 'N' staan voor respectievelijk kilometers, mijlen en zeemijlen."
 
 #: libexif/exif-tag.c:471
 msgid "Distance to destination"
@@ -2997,31 +3478,53 @@ msgid "Name of GPS processing method"
 msgstr "Naam van GPS-verwerkingsmethode"
 
 #: libexif/exif-tag.c:474
-msgid "A character string recording the name of the method used for location finding. The first byte indicates the character code used, and this is followed by the name of the method. Since the Type is not ASCII, NULL termination is not necessary."
-msgstr "Een tekenreeks waarin de naam van de methode staat waarmee de locatie wordt bepaald. De eerste byte geeft de gebruikte tekencode, en dit wordt gevolgd door de naam van de methode. Omdat het geen ASCII betreft, is afsluiten met een NUL niet noodzakelijk. "
+msgid ""
+"A character string recording the name of the method used for location "
+"finding. The first byte indicates the character code used, and this is "
+"followed by the name of the method. Since the Type is not ASCII, NULL "
+"termination is not necessary."
+msgstr ""
+"Een tekenreeks waarin de naam van de methode staat waarmee de locatie wordt "
+"bepaald. De eerste byte geeft de gebruikte tekencode, en dit wordt gevolgd "
+"door de naam van de methode. Omdat het geen ASCII betreft, is afsluiten met "
+"een NUL niet noodzakelijk. "
 
 #: libexif/exif-tag.c:479
 msgid "Name of GPS area"
 msgstr "Naam van GPS-gebied"
 
 #: libexif/exif-tag.c:480
-msgid "A character string recording the name of the GPS area. The first byte indicates the character code used, and this is followed by the name of the GPS area. Since the Type is not ASCII, NULL termination is not necessary."
-msgstr "Een tekenreeks waarin de naam van het GPS-gebied is opgeslagen. De eerste byte geeft de gebruikte tekencode, en dit wordt gevolgd door de naam van het GPS-gebied. Omdat het geen ASCII betreft, is afsluiten met een NUL niet noodzakelijk. "
+msgid ""
+"A character string recording the name of the GPS area. The first byte "
+"indicates the character code used, and this is followed by the name of the "
+"GPS area. Since the Type is not ASCII, NULL termination is not necessary."
+msgstr ""
+"Een tekenreeks waarin de naam van het GPS-gebied is opgeslagen. De eerste "
+"byte geeft de gebruikte tekencode, en dit wordt gevolgd door de naam van het "
+"GPS-gebied. Omdat het geen ASCII betreft, is afsluiten met een NUL niet "
+"noodzakelijk. "
 
 #: libexif/exif-tag.c:484
 msgid "GPS date"
 msgstr "GPS-datum"
 
 #: libexif/exif-tag.c:485
-msgid "A character string recording date and time information relative to UTC (Coordinated Universal Time). The format is \"YYYY:MM:DD\". The length of the string is 11 bytes including NULL."
-msgstr "Een tekenreeks waarin de datum- en tijdinformatie relatief tot UTC (Coordinated Universal Time) is opgeslagen in de vorm \"YYYY:MM:DD\". De lengte van de tekenreeks is 11 byte, inclusief NUL."
+msgid ""
+"A character string recording date and time information relative to UTC "
+"(Coordinated Universal Time). The format is \"YYYY:MM:DD\". The length of "
+"the string is 11 bytes including NULL."
+msgstr ""
+"Een tekenreeks waarin de datum- en tijdinformatie relatief tot UTC "
+"(Coordinated Universal Time) is opgeslagen in de vorm \"YYYY:MM:DD\". De "
+"lengte van de tekenreeks is 11 byte, inclusief NUL."
 
 #: libexif/exif-tag.c:489
 msgid "GPS differential correction"
 msgstr "GPS-differentiaalcorrectie (DGPS)"
 
 #: libexif/exif-tag.c:490
-msgid "Indicates whether differential correction is applied to the GPS receiver."
+msgid ""
+"Indicates whether differential correction is applied to the GPS receiver."
 msgstr "Geeft aan of differentiaalcorrectie op de GPS-ontvanger is toegepast."
 
 #: libexif/exif-tag.c:494
@@ -3029,16 +3532,26 @@ msgid "ISO Speed Ratings"
 msgstr "ISO-snelheidsgetal"
 
 #: libexif/exif-tag.c:495
-msgid "Indicates the ISO Speed and ISO Latitude of the camera or input device as specified in ISO 12232."
-msgstr "Geeft de ISO-snelheid en ISO-lengtegraad van de camera of het apparaat aan zoals deze gespecificeerd is in ISO 12232."
+msgid ""
+"Indicates the ISO Speed and ISO Latitude of the camera or input device as "
+"specified in ISO 12232."
+msgstr ""
+"Geeft de ISO-snelheid en ISO-lengtegraad van de camera of het apparaat aan "
+"zoals deze gespecificeerd is in ISO 12232."
 
 #: libexif/exif-tag.c:498
 msgid "OECF"
 msgstr "OECF"
 
 #: libexif/exif-tag.c:499
-msgid "Indicates the Opto-Electronic Conversion Function (OECF) specified in ISO 14524. <OECF> is the relationship between the camera optical input and the image values."
-msgstr "Geeft de opto-electronische conversiefunctie (OECF) aan gespecificeerd in ISO 14525. <OECF> betreft de relatie tussen de optische invoer van de camera en de afbeeldingswaarden."
+msgid ""
+"Indicates the Opto-Electronic Conversion Function (OECF) specified in ISO "
+"14524. <OECF> is the relationship between the camera optical input and the "
+"image values."
+msgstr ""
+"Geeft de opto-electronische conversiefunctie (OECF) aan gespecificeerd in "
+"ISO 14525. <OECF> betreft de relatie tussen de optische invoer van de camera "
+"en de afbeeldingswaarden."
 
 #: libexif/exif-tag.c:504
 msgid "Time Zone Offset"
@@ -3053,16 +3566,25 @@ msgid "Exif Version"
 msgstr "Exif-versie"
 
 #: libexif/exif-tag.c:507
-msgid "The version of this standard supported. Nonexistence of this field is taken to mean nonconformance to the standard."
-msgstr "De versie van deze ondersteunde standaard. Ontbreken van dit veld wordt geïnterpreteerd als het niet voldoen aan de standaard."
+msgid ""
+"The version of this standard supported. Nonexistence of this field is taken "
+"to mean nonconformance to the standard."
+msgstr ""
+"De versie van deze ondersteunde standaard. Ontbreken van dit veld wordt "
+"geïnterpreteerd als het niet voldoen aan de standaard."
 
 #: libexif/exif-tag.c:511
 msgid "Date and Time (original)"
 msgstr "Datum en tijdstip (oorspronkelijk)"
 
 #: libexif/exif-tag.c:512
-msgid "The date and time when the original image data was generated. For a digital still camera the date and time the picture was taken are recorded."
-msgstr "De datum en het tijdstip waarop de oorspronkelijke afbeeldingsgegevens zijn gegenereerd. Voor een digitaal fototoestel wordt de datum en het tijdstip genomen waarop de foto genomen is."
+msgid ""
+"The date and time when the original image data was generated. For a digital "
+"still camera the date and time the picture was taken are recorded."
+msgstr ""
+"De datum en het tijdstip waarop de oorspronkelijke afbeeldingsgegevens zijn "
+"gegenereerd. Voor een digitaal fototoestel wordt de datum en het tijdstip "
+"genomen waarop de foto genomen is."
 
 #: libexif/exif-tag.c:517
 msgid "Date and Time (digitized)"
@@ -3070,31 +3592,55 @@ msgstr "Datum en tijdstip (van digitalisatie)"
 
 #: libexif/exif-tag.c:518
 msgid "The date and time when the image was stored as digital data."
-msgstr "De datum en het tijdstip waarop de opname als digitale gegevens is opgeslagen. "
+msgstr ""
+"De datum en het tijdstip waarop de opname als digitale gegevens is "
+"opgeslagen. "
 
 #: libexif/exif-tag.c:521
 msgid "Components Configuration"
 msgstr "Configuratie van componenten"
 
 #: libexif/exif-tag.c:522
-msgid "Information specific to compressed data. The channels of each component are arranged in order from the 1st component to the 4th. For uncompressed data the data arrangement is given in the <PhotometricInterpretation> tag. However, since <PhotometricInterpretation> can only express the order of Y, Cb and Cr, this tag is provided for cases when compressed data uses components other than Y, Cb, and Cr and to enable support of other sequences."
-msgstr "Informatie specifiek voor gecomprimeerde gegevens. De kanalen van iedere component zijn geordend in de volgorde van de eerste tot de vierde component.Voor niet-gecomprimeerde informatie is de gegevensordening beschreven in het <PhotometricInterpretation>-label. Echter, omdat <PhotometricInterpretation> alleen uitgedrukt kan worden in de volgorde van Y, Cb en Cr, wordt dit label gebruikt voor die gevallen waarin gecomprimeerde gegevens componenten gebruikt afwijkend van Y, Cb en Cr, en om andere ordeningen te ondersteunen."
+msgid ""
+"Information specific to compressed data. The channels of each component are "
+"arranged in order from the 1st component to the 4th. For uncompressed data "
+"the data arrangement is given in the <PhotometricInterpretation> tag. "
+"However, since <PhotometricInterpretation> can only express the order of Y, "
+"Cb and Cr, this tag is provided for cases when compressed data uses "
+"components other than Y, Cb, and Cr and to enable support of other sequences."
+msgstr ""
+"Informatie specifiek voor gecomprimeerde gegevens. De kanalen van iedere "
+"component zijn geordend in de volgorde van de eerste tot de vierde component."
+"Voor niet-gecomprimeerde informatie is de gegevensordening beschreven in het "
+"<PhotometricInterpretation>-label. Echter, omdat <PhotometricInterpretation> "
+"alleen uitgedrukt kan worden in de volgorde van Y, Cb en Cr, wordt dit label "
+"gebruikt voor die gevallen waarin gecomprimeerde gegevens componenten "
+"gebruikt afwijkend van Y, Cb en Cr, en om andere ordeningen te ondersteunen."
 
 #: libexif/exif-tag.c:532
 msgid "Compressed Bits per Pixel"
 msgstr "Gecomprimeerde bits per pixel"
 
 #: libexif/exif-tag.c:533
-msgid "Information specific to compressed data. The compression mode used for a compressed image is indicated in unit bits per pixel."
-msgstr "Informatie specifiek voor gecomprimeerde gegevens. De compressiemodus die voor de gecomprimeerde afbeelding wordt gebruikt, heeft de eenheid bits per pixel."
+msgid ""
+"Information specific to compressed data. The compression mode used for a "
+"compressed image is indicated in unit bits per pixel."
+msgstr ""
+"Informatie specifiek voor gecomprimeerde gegevens. De compressiemodus die "
+"voor de gecomprimeerde afbeelding wordt gebruikt, heeft de eenheid bits per "
+"pixel."
 
 #: libexif/exif-tag.c:537
 msgid "Shutter speed"
 msgstr "Sluitersnelheid"
 
 #: libexif/exif-tag.c:538
-msgid "Shutter speed. The unit is the APEX (Additive System of Photographic Exposure) setting."
-msgstr "Sluitersnelheid. De eenheid is de APEX-instelling (Additive System of Photographic Exposure)."
+msgid ""
+"Shutter speed. The unit is the APEX (Additive System of Photographic "
+"Exposure) setting."
+msgstr ""
+"Sluitersnelheid. De eenheid is de APEX-instelling (Additive System of "
+"Photographic Exposure)."
 
 #: libexif/exif-tag.c:542
 msgid "The lens aperture. The unit is the APEX value."
@@ -3105,24 +3651,37 @@ msgid "Brightness"
 msgstr "Helderheid"
 
 #: libexif/exif-tag.c:545
-msgid "The value of brightness. The unit is the APEX value. Ordinarily it is given in the range of -99.99 to 99.99."
-msgstr "De helderheidswaarde. De eenheid is de APEX-waarde. Normaal gesproken valt dit binnen het bereik van -99.99 tot 99.99."
+msgid ""
+"The value of brightness. The unit is the APEX value. Ordinarily it is given "
+"in the range of -99.99 to 99.99."
+msgstr ""
+"De helderheidswaarde. De eenheid is de APEX-waarde. Normaal gesproken valt "
+"dit binnen het bereik van -99.99 tot 99.99."
 
 #: libexif/exif-tag.c:549
 msgid "Exposure Bias"
 msgstr "Belichtingscompensatie"
 
 #: libexif/exif-tag.c:550
-msgid "The exposure bias. The units is the APEX value. Ordinarily it is given in the range of -99.99 to 99.99."
-msgstr "De belichtingscompensatie. De eenheid is de APEX-waarde. Normaal gesproken ligt dit in het bereik van -99.99 tot 99.99."
+msgid ""
+"The exposure bias. The units is the APEX value. Ordinarily it is given in "
+"the range of -99.99 to 99.99."
+msgstr ""
+"De belichtingscompensatie. De eenheid is de APEX-waarde. Normaal gesproken "
+"ligt dit in het bereik van -99.99 tot 99.99."
 
 #: libexif/exif-tag.c:553
 msgid "Maximum Aperture Value"
 msgstr "Maximale diafragmawaarde"
 
 #: libexif/exif-tag.c:554
-msgid "The smallest F number of the lens. The unit is the APEX value. Ordinarily it is given in the range of 00.00 to 99.99, but it is not limited to this range."
-msgstr "Het kleinste F-getal van de lens. De eenheid is de APEX-waarde. Normaal gesproken valt dit in het bereik van 00.00 tot 99.99, maar het is niet tot dit bereik beperkt."
+msgid ""
+"The smallest F number of the lens. The unit is the APEX value. Ordinarily it "
+"is given in the range of 00.00 to 99.99, but it is not limited to this range."
+msgstr ""
+"Het kleinste F-getal van de lens. De eenheid is de APEX-waarde. Normaal "
+"gesproken valt dit in het bereik van 00.00 tot 99.99, maar het is niet tot "
+"dit bereik beperkt."
 
 #: libexif/exif-tag.c:559
 msgid "Subject Distance"
@@ -3145,40 +3704,97 @@ msgid "The kind of light source."
 msgstr "Het soort lichtbron."
 
 #: libexif/exif-tag.c:569
-msgid "This tag is recorded when an image is taken using a strobe light (flash)."
-msgstr "Dit label is vastgelegd als de afbeelding is genomen met een flitslicht (flitser)."
+msgid ""
+"This tag is recorded when an image is taken using a strobe light (flash)."
+msgstr ""
+"Dit label is vastgelegd als de afbeelding is genomen met een flitslicht "
+"(flitser)."
 
 #: libexif/exif-tag.c:573
-msgid "The actual focal length of the lens, in mm. Conversion is not made to the focal length of a 35 mm film camera."
-msgstr "De werkelijke brandpuntsafstand van de lens in mm. Conversie naar de brandpuntsafstand van een 35 mm filmcamera wordt niet gemaakt."
+msgid ""
+"The actual focal length of the lens, in mm. Conversion is not made to the "
+"focal length of a 35 mm film camera."
+msgstr ""
+"De werkelijke brandpuntsafstand van de lens in mm. Conversie naar de "
+"brandpuntsafstand van een 35 mm filmcamera wordt niet gemaakt."
 
 #: libexif/exif-tag.c:576
 msgid "Maker Note"
 msgstr "Fabrikantennotitie"
 
 #: libexif/exif-tag.c:577
-msgid "A tag for manufacturers of Exif writers to record any desired information. The contents are up to the manufacturer."
-msgstr "Een label voor de fabrikanten van Exif-schrijvers om iedere gewenste informatie in op te nemen. De inhoud is de verantwoordelijkheid van de fabrikant."
+msgid ""
+"A tag for manufacturers of Exif writers to record any desired information. "
+"The contents are up to the manufacturer."
+msgstr ""
+"Een label voor de fabrikanten van Exif-schrijvers om iedere gewenste "
+"informatie in op te nemen. De inhoud is de verantwoordelijkheid van de "
+"fabrikant."
 
 #: libexif/exif-tag.c:580
 msgid "User Comment"
 msgstr "Gebruikerscommentaar"
 
 #: libexif/exif-tag.c:581
-msgid "A tag for Exif users to write keywords or comments on the image besides those in <ImageDescription>, and without the character code limitations of the <ImageDescription> tag. The character code used in the <UserComment> tag is identified based on an ID code in a fixed 8-byte area at the start of the tag data area. The unused portion of the area is padded with NULL (\"00.h\"). ID codes are assigned by means of registration. The designation method and references for each character code are defined in the specification. The value of CountN is determined based on the 8 bytes in the character code area and the number of bytes in the user comment part. Since the TYPE is not ASCII, NULL termination is not necessary. The ID code for the <UserComment> area may be a Defined code such as JIS or ASCII, or may be Undefined. The Undefined name is UndefinedText, and the ID code is filled with 8 bytes of all \"NULL\" (\"00.H\"). An Exif reader that reads the <UserComment> tag must have a function for determining the ID code. This function is not required in Exif readers that do not use the <UserComment> tag. When a <UserComment> area is set aside, it is recommended that the ID code be ASCII and that the following user comment part be filled with blank characters [20.H]."
-msgstr "Een label voor Exif-gebruikers om sleutelwoorden of commentaar over de afbeelding vast te leggen, naast die in <ImageDescription> en zonder de beperkingen van de tekencode van het <ImageDescription>-label. De tekencode die in de <UserComment> wordt gebruikt, wordt vastgesteld gebaseerd op een ID-code in een vast 8-byte gebied aan het begin van het labelgegevensruimte. Het ongebruikte deel van deze ruimte wordt gevuld met NUL (\"00.H\"). ID-codes worden toegekend via registratie. De toewijzingsmethode en refenties voor iedere tekencode zijn gegeven in de specificatie. De waarde van CountN is bepaald gebaseerd op de 8 bytes in de tekencoderuimte en het aantal bytes in het deel van het gebruikerscommentaar. Omdat het TYPE geen ASCII is, is beëindiging met een NUL niet noodzakelijk. De ID-code voor het <UserComment>-begied kan een 'Gedefinieerde code' zijn zoals JIS of ASCII, of mag ongedefinieerd zijn. De ongedefinieerde naam is UndefinedText en de ID-code is gevuld met 8 bytes van \"NUL\" (\"00.H\"). Een Exif-lezer die het <UserComment>-label leest moet een functie hebben om de ID-code te bepalen. Deze functie is niet vereist in Exif-lezers die het <UserComment>-label niet gebruiken. Als een <UserComment>-ruimte terzijde worden geschoven wordt aanbevolen dat de ID-code ASCII is en dat het volgende gebruikerscommentaardeel wordt gevuld met lege tekens [20.H]."
+msgid ""
+"A tag for Exif users to write keywords or comments on the image besides "
+"those in <ImageDescription>, and without the character code limitations of "
+"the <ImageDescription> tag. The character code used in the <UserComment> tag "
+"is identified based on an ID code in a fixed 8-byte area at the start of the "
+"tag data area. The unused portion of the area is padded with NULL (\"00.h"
+"\"). ID codes are assigned by means of registration. The designation method "
+"and references for each character code are defined in the specification. The "
+"value of CountN is determined based on the 8 bytes in the character code "
+"area and the number of bytes in the user comment part. Since the TYPE is not "
+"ASCII, NULL termination is not necessary. The ID code for the <UserComment> "
+"area may be a Defined code such as JIS or ASCII, or may be Undefined. The "
+"Undefined name is UndefinedText, and the ID code is filled with 8 bytes of "
+"all \"NULL\" (\"00.H\"). An Exif reader that reads the <UserComment> tag "
+"must have a function for determining the ID code. This function is not "
+"required in Exif readers that do not use the <UserComment> tag. When a "
+"<UserComment> area is set aside, it is recommended that the ID code be ASCII "
+"and that the following user comment part be filled with blank characters [20."
+"H]."
+msgstr ""
+"Een label voor Exif-gebruikers om sleutelwoorden of commentaar over de "
+"afbeelding vast te leggen, naast die in <ImageDescription> en zonder de "
+"beperkingen van de tekencode van het <ImageDescription>-label. De tekencode "
+"die in de <UserComment> wordt gebruikt, wordt vastgesteld gebaseerd op een "
+"ID-code in een vast 8-byte gebied aan het begin van het labelgegevensruimte. "
+"Het ongebruikte deel van deze ruimte wordt gevuld met NUL (\"00.H\"). ID-"
+"codes worden toegekend via registratie. De toewijzingsmethode en refenties "
+"voor iedere tekencode zijn gegeven in de specificatie. De waarde van CountN "
+"is bepaald gebaseerd op de 8 bytes in de tekencoderuimte en het aantal bytes "
+"in het deel van het gebruikerscommentaar. Omdat het TYPE geen ASCII is, is "
+"beëindiging met een NUL niet noodzakelijk. De ID-code voor het <UserComment>-"
+"begied kan een 'Gedefinieerde code' zijn zoals JIS of ASCII, of mag "
+"ongedefinieerd zijn. De ongedefinieerde naam is UndefinedText en de ID-code "
+"is gevuld met 8 bytes van \"NUL\" (\"00.H\"). Een Exif-lezer die het "
+"<UserComment>-label leest moet een functie hebben om de ID-code te bepalen. "
+"Deze functie is niet vereist in Exif-lezers die het <UserComment>-label niet "
+"gebruiken. Als een <UserComment>-ruimte terzijde worden geschoven wordt "
+"aanbevolen dat de ID-code ASCII is en dat het volgende "
+"gebruikerscommentaardeel wordt gevuld met lege tekens [20.H]."
 
 #: libexif/exif-tag.c:605
 msgid "A tag used to record fractions of seconds for the <DateTime> tag."
-msgstr "Een label voor het vastleggen van fracties van seconden voor het <DateTime>-label."
+msgstr ""
+"Een label voor het vastleggen van fracties van seconden voor het <DateTime>-"
+"label."
 
 #: libexif/exif-tag.c:610
-msgid "A tag used to record fractions of seconds for the <DateTimeOriginal> tag."
-msgstr "Een label voor het vastleggen van fracties van seconden voor het <DateTimeOriginal>-label."
+msgid ""
+"A tag used to record fractions of seconds for the <DateTimeOriginal> tag."
+msgstr ""
+"Een label voor het vastleggen van fracties van seconden voor het "
+"<DateTimeOriginal>-label."
 
 #: libexif/exif-tag.c:615
-msgid "A tag used to record fractions of seconds for the <DateTimeDigitized> tag."
-msgstr "Een label voor het vastleggen van fracties van seconden voor het <DateTimeDigitized>-label."
+msgid ""
+"A tag used to record fractions of seconds for the <DateTimeDigitized> tag."
+msgstr ""
+"Een label voor het vastleggen van fracties van seconden voor het "
+"<DateTimeDigitized>-label."
 
 #: libexif/exif-tag.c:619
 msgid "XP Title"
@@ -3193,24 +3809,34 @@ msgid "XP Comment"
 msgstr "XP-commentaar"
 
 #: libexif/exif-tag.c:625
-msgid "A character string containing a comment about the image, encoded in UTF-16LE."
-msgstr "Een tekenreeks met een opmerking over de afbeelding, in UTF-16LE gecodeerd."
+msgid ""
+"A character string containing a comment about the image, encoded in UTF-16LE."
+msgstr ""
+"Een tekenreeks met een opmerking over de afbeelding, in UTF-16LE gecodeerd."
 
 #: libexif/exif-tag.c:629
 msgid "XP Author"
 msgstr "XP-auteur"
 
 #: libexif/exif-tag.c:630
-msgid "A character string containing the name of the image creator, encoded in UTF-16LE."
-msgstr "Een tekenreeks met de naam van de maker van de afbeelding, in UTF-16LE gecodeerd."
+msgid ""
+"A character string containing the name of the image creator, encoded in UTF-"
+"16LE."
+msgstr ""
+"Een tekenreeks met de naam van de maker van de afbeelding, in UTF-16LE "
+"gecodeerd."
 
 #: libexif/exif-tag.c:634
 msgid "XP Keywords"
 msgstr "XP-sleutelwoorden"
 
 #: libexif/exif-tag.c:635
-msgid "A character string containing key words describing the image, encoded in UTF-16LE."
-msgstr "Een tekenreeks met sleutelwoorden die de afbeelding beschrijven, in UTF-16LE gecodeerd."
+msgid ""
+"A character string containing key words describing the image, encoded in UTF-"
+"16LE."
+msgstr ""
+"Een tekenreeks met sleutelwoorden die de afbeelding beschrijven, in UTF-16LE "
+"gecodeerd."
 
 #: libexif/exif-tag.c:639
 msgid "XP Subject"
@@ -3218,7 +3844,8 @@ msgstr "XP-onderwerp"
 
 #: libexif/exif-tag.c:640
 msgid "A character string giving the image subject, encoded in UTF-16LE."
-msgstr "Een tekenreeks met het onderwerp van de afbeelding, in UTF-16LE gecodeerd."
+msgstr ""
+"Een tekenreeks met het onderwerp van de afbeelding, in UTF-16LE gecodeerd."
 
 #: libexif/exif-tag.c:644
 msgid "The FlashPix format version supported by a FPXR file."
@@ -3229,80 +3856,206 @@ msgid "Color Space"
 msgstr "Kleurruimte"
 
 #: libexif/exif-tag.c:647
-msgid "The color space information tag is always recorded as the color space specifier. Normally sRGB (=1) is used to define the color space based on the PC monitor conditions and environment. If a color space other than sRGB is used, Uncalibrated (=FFFF.H) is set. Image data recorded as Uncalibrated can be treated as sRGB when it is converted to FlashPix."
-msgstr "De kleurruimte-informatielabel is altijd vastgelegd als de kleurruimtespecificatie. Normaal wordt sRGB (=1) gebruikt om de kleurruimte te definiëren gebaseerd op de condities van het PC-beeldscherm en de omgeving. Als een andere kleurruimte dan sRGB wordt gebruikt, wordt ongecalibreerd (=FFFF.H) ingesteld. Afbeeldingsgegevens vastgelegd als ongecalibreerd kunnen worden behandeld als sRGB als deze is geconverteerd naar FlashPix."
+msgid ""
+"The color space information tag is always recorded as the color space "
+"specifier. Normally sRGB (=1) is used to define the color space based on the "
+"PC monitor conditions and environment. If a color space other than sRGB is "
+"used, Uncalibrated (=FFFF.H) is set. Image data recorded as Uncalibrated can "
+"be treated as sRGB when it is converted to FlashPix."
+msgstr ""
+"De kleurruimte-informatielabel is altijd vastgelegd als de "
+"kleurruimtespecificatie. Normaal wordt sRGB (=1) gebruikt om de kleurruimte "
+"te definiëren gebaseerd op de condities van het PC-beeldscherm en de "
+"omgeving. Als een andere kleurruimte dan sRGB wordt gebruikt, wordt "
+"ongecalibreerd (=FFFF.H) ingesteld. Afbeeldingsgegevens vastgelegd als "
+"ongecalibreerd kunnen worden behandeld als sRGB als deze is geconverteerd "
+"naar FlashPix."
 
 #: libexif/exif-tag.c:656
-msgid "Information specific to compressed data. When a compressed file is recorded, the valid width of the meaningful image must be recorded in this tag, whether or not there is padding data or a restart marker. This tag should not exist in an uncompressed file."
-msgstr "Informatie specifiek voor gecomprimeerde gegevens. Als een gecomprimeerd bestand is vastgelegd, moet de geldige breedte van de betekenisvolle afbeelding opgenomen worden in dit label, onafhankelijk of er opvulgegevens zijn of een herstart-aanduiding. Dit label moet niet bestaan in een ongecomprimeerd bestand."
+msgid ""
+"Information specific to compressed data. When a compressed file is recorded, "
+"the valid width of the meaningful image must be recorded in this tag, "
+"whether or not there is padding data or a restart marker. This tag should "
+"not exist in an uncompressed file."
+msgstr ""
+"Informatie specifiek voor gecomprimeerde gegevens. Als een gecomprimeerd "
+"bestand is vastgelegd, moet de geldige breedte van de betekenisvolle "
+"afbeelding opgenomen worden in dit label, onafhankelijk of er opvulgegevens "
+"zijn of een herstart-aanduiding. Dit label moet niet bestaan in een "
+"ongecomprimeerd bestand."
 
 #: libexif/exif-tag.c:663
-msgid "Information specific to compressed data. When a compressed file is recorded, the valid height of the meaningful image must be recorded in this tag, whether or not there is padding data or a restart marker. This tag should not exist in an uncompressed file. Since data padding is unnecessary in the vertical direction, the number of lines recorded in this valid image height tag will in fact be the same as that recorded in the SOF."
-msgstr "Informatie specifiek voor gecomprimeerde gegevens. Als een gecomprimeerd bestand is vastgelegd, moet de geldige hoogte van de betekenisvolle afbeelding opgenomen worden in dit label, onafhankelijk of er opvulgegevens zijn of een herstart-aanduiding. Dit label moet niet bestaan in een ongecomprimeerd bestand. Omdat opvulgegevens niet nodig zijn in de vertikale richting, is het aantal regels in dit label van geldige afbeeldingshoogte gelijk aan die vastgelegd in de SOF."
+msgid ""
+"Information specific to compressed data. When a compressed file is recorded, "
+"the valid height of the meaningful image must be recorded in this tag, "
+"whether or not there is padding data or a restart marker. This tag should "
+"not exist in an uncompressed file. Since data padding is unnecessary in the "
+"vertical direction, the number of lines recorded in this valid image height "
+"tag will in fact be the same as that recorded in the SOF."
+msgstr ""
+"Informatie specifiek voor gecomprimeerde gegevens. Als een gecomprimeerd "
+"bestand is vastgelegd, moet de geldige hoogte van de betekenisvolle "
+"afbeelding opgenomen worden in dit label, onafhankelijk of er opvulgegevens "
+"zijn of een herstart-aanduiding. Dit label moet niet bestaan in een "
+"ongecomprimeerd bestand. Omdat opvulgegevens niet nodig zijn in de vertikale "
+"richting, is het aantal regels in dit label van geldige afbeeldingshoogte "
+"gelijk aan die vastgelegd in de SOF."
 
 #: libexif/exif-tag.c:674
-msgid "This tag is used to record the name of an audio file related to the image data. The only relational information recorded here is the Exif audio file name and extension (an ASCII string consisting of 8 characters + '.' + 3 characters). The path is not recorded. Stipulations on audio and file naming conventions are defined in the specification. When using this tag, audio files must be recorded in conformance to the Exif audio format. Writers are also allowed to store the data such as Audio within APP2 as FlashPix extension stream data. Audio files must be recorded in conformance to the Exif audio format. The mapping of Exif image files and audio files is done in any of three ways, [1], [2] and [3]. If multiple files are mapped to one file as in [2] or [3], the above format is used to record just one audio file name. If there are multiple audio files, the first recorded file is given. In the case of [3], for example, for the Exif image file \"DSC00001.JPG\" only  \"SND00001.WAV\" is given as the related Exif audio file. When there are three Exif audio files \"SND00001.WAV\", \"SND00002.WAV\" and \"SND00003.WAV\", the Exif image file name for each of them, \"DSC00001.JPG\", is indicated. By combining multiple relational information, a variety of playback possibilities can be supported. The method of using relational information is left to the implementation on the playback side. Since this information is an ASCII character string, it is terminated by NULL. When this tag is used to map audio files, the relation of the audio file to image data must also be indicated on the audio file end."
-msgstr "Dit label is gebruikt om de naam van een geluidsbestand vast te leggen die gerelateerd is aan de afbeeldingsgegevens. De enige relationele informatie die hier wordt vastgelegd is de naam en extentie van het Exif-geluidsbestand (een ASCII-tekenreeks bestaande uit 8 tekens + '.' + 3 tekens). Het pad is niet opgeslagen. Voorwaarden voor geluid worden gegeven in paragraaf 3.6.3. Conventies van bestandsnamen staan in paragraaf 3.7.1. Als dit label wordt gebruikt, dan moeten geluidsbestanden opgenomen worden in overeenstemming met het Exif-geluidspatroon. Het afbeelden van Exif-afbeeldingsbestanden en geluidsbestanden is uitgevoerd op ieder van de drie wijzen zoals aangeduid in tabel 8. Als meerdere bestanden afgebeeld worden op een bestand zoals in [2] of [3] van deze tabel, dan wordt het bovenstaande patroon gebruikt om slechts één Exif-geluidsbestand op te nemen. Als er drie Exif-geluidsbestanden zijn \"SND00001.WAV\", \"SND00002.WAV\" en \"SND00003.WAV\" dan wordt de Exif-afbeeldingsnaam voor eenieder \"DSC00001.JPG\", zoals aangegeven. Door het combineren van meerdere, relationele informatie kan een variëteit aan afspeelmogelijkheiden worden ondersteund. De methode om relationele informatie te gebruiken wordt overgelaten aan de implementatie aan de afspeelzijde. Omdat deze informatie uit ASCII-tekenreeksen bestaat, wordt deze beëndigd door NUL. Als dit label gebruikt wordt om geluidsbestanden af te beelden, dan moet de relatie tussen het geluidsbestand en de afbeeldingsgegevens ook aangegeven worden op het einde van het geluidsbestand."
+msgid ""
+"This tag is used to record the name of an audio file related to the image "
+"data. The only relational information recorded here is the Exif audio file "
+"name and extension (an ASCII string consisting of 8 characters + '.' + 3 "
+"characters). The path is not recorded. Stipulations on audio and file naming "
+"conventions are defined in the specification. When using this tag, audio "
+"files must be recorded in conformance to the Exif audio format. Writers are "
+"also allowed to store the data such as Audio within APP2 as FlashPix "
+"extension stream data. Audio files must be recorded in conformance to the "
+"Exif audio format. The mapping of Exif image files and audio files is done "
+"in any of three ways, [1], [2] and [3]. If multiple files are mapped to one "
+"file as in [2] or [3], the above format is used to record just one audio "
+"file name. If there are multiple audio files, the first recorded file is "
+"given. In the case of [3], for example, for the Exif image file \"DSC00001."
+"JPG\" only  \"SND00001.WAV\" is given as the related Exif audio file. When "
+"there are three Exif audio files \"SND00001.WAV\", \"SND00002.WAV\" and "
+"\"SND00003.WAV\", the Exif image file name for each of them, \"DSC00001.JPG"
+"\", is indicated. By combining multiple relational information, a variety of "
+"playback possibilities can be supported. The method of using relational "
+"information is left to the implementation on the playback side. Since this "
+"information is an ASCII character string, it is terminated by NULL. When "
+"this tag is used to map audio files, the relation of the audio file to image "
+"data must also be indicated on the audio file end."
+msgstr ""
+"Dit label is gebruikt om de naam van een geluidsbestand vast te leggen die "
+"gerelateerd is aan de afbeeldingsgegevens. De enige relationele informatie "
+"die hier wordt vastgelegd is de naam en extentie van het Exif-geluidsbestand "
+"(een ASCII-tekenreeks bestaande uit 8 tekens + '.' + 3 tekens). Het pad is "
+"niet opgeslagen. Voorwaarden voor geluid worden gegeven in paragraaf 3.6.3. "
+"Conventies van bestandsnamen staan in paragraaf 3.7.1. Als dit label wordt "
+"gebruikt, dan moeten geluidsbestanden opgenomen worden in overeenstemming "
+"met het Exif-geluidspatroon. Het afbeelden van Exif-afbeeldingsbestanden en "
+"geluidsbestanden is uitgevoerd op ieder van de drie wijzen zoals aangeduid "
+"in tabel 8. Als meerdere bestanden afgebeeld worden op een bestand zoals in "
+"[2] of [3] van deze tabel, dan wordt het bovenstaande patroon gebruikt om "
+"slechts één Exif-geluidsbestand op te nemen. Als er drie Exif-"
+"geluidsbestanden zijn \"SND00001.WAV\", \"SND00002.WAV\" en \"SND00003.WAV\" "
+"dan wordt de Exif-afbeeldingsnaam voor eenieder \"DSC00001.JPG\", zoals "
+"aangegeven. Door het combineren van meerdere, relationele informatie kan een "
+"variëteit aan afspeelmogelijkheiden worden ondersteund. De methode om "
+"relationele informatie te gebruiken wordt overgelaten aan de implementatie "
+"aan de afspeelzijde. Omdat deze informatie uit ASCII-tekenreeksen bestaat, "
+"wordt deze beëndigd door NUL. Als dit label gebruikt wordt om "
+"geluidsbestanden af te beelden, dan moet de relatie tussen het "
+"geluidsbestand en de afbeeldingsgegevens ook aangegeven worden op het einde "
+"van het geluidsbestand."
 
 #: libexif/exif-tag.c:706
-msgid "Interoperability IFD is composed of tags which stores the information to ensure the Interoperability and pointed by the following tag located in Exif IFD. The Interoperability structure of Interoperability IFD is the same as TIFF defined IFD structure but does not contain the image data characteristically compared with normal TIFF IFD."
-msgstr "Interoperabiliteit IFD is samengesteld door labels die informatie bevatten om deze interoperabiliteit te waarborgen en verwijst naar de volgende label opgeslagen in Exif IFD. De structuur van interoperabiliteit van Interoperabiliteit IFD is gelijk aan TIFF-gedefinieerde IFD-structuur, maar bevat geen afbeeldingsgegevens karakteristiek vergeleken met normale TIFF IFD. "
+msgid ""
+"Interoperability IFD is composed of tags which stores the information to "
+"ensure the Interoperability and pointed by the following tag located in Exif "
+"IFD. The Interoperability structure of Interoperability IFD is the same as "
+"TIFF defined IFD structure but does not contain the image data "
+"characteristically compared with normal TIFF IFD."
+msgstr ""
+"Interoperabiliteit IFD is samengesteld door labels die informatie bevatten "
+"om deze interoperabiliteit te waarborgen en verwijst naar de volgende label "
+"opgeslagen in Exif IFD. De structuur van interoperabiliteit van "
+"Interoperabiliteit IFD is gelijk aan TIFF-gedefinieerde IFD-structuur, maar "
+"bevat geen afbeeldingsgegevens karakteristiek vergeleken met normale TIFF "
+"IFD. "
 
 #: libexif/exif-tag.c:715
 msgid "Flash Energy"
 msgstr "Flitsenergie"
 
 #: libexif/exif-tag.c:716
-msgid "Indicates the strobe energy at the time the image is captured, as measured in Beam Candle Power Seconds (BCPS)."
-msgstr "Geeft de flitsenergie aan op het moment dat de afbeelding is geschoten, gemeten in Bean Candle Power Seconds (BCPS)"
+msgid ""
+"Indicates the strobe energy at the time the image is captured, as measured "
+"in Beam Candle Power Seconds (BCPS)."
+msgstr ""
+"Geeft de flitsenergie aan op het moment dat de afbeelding is geschoten, "
+"gemeten in Bean Candle Power Seconds (BCPS)"
 
 #: libexif/exif-tag.c:720
 msgid "Spatial Frequency Response"
 msgstr "Ruimtelijke frequentierespons"
 
 #: libexif/exif-tag.c:721
-msgid "This tag records the camera or input device spatial frequency table and SFR values in the direction of image width, image height, and diagonal direction, as specified in ISO 12233."
-msgstr "Dit label legt de ruimtelijke frequentietabel van de camera of invoerapparaat vast en de SFR-waarden in de richting van de afbeeldingsbreedte, afbeeldingshoogte en de diagonale richting, zoals beschreven in ISO 12233."
+msgid ""
+"This tag records the camera or input device spatial frequency table and SFR "
+"values in the direction of image width, image height, and diagonal "
+"direction, as specified in ISO 12233."
+msgstr ""
+"Dit label legt de ruimtelijke frequentietabel van de camera of "
+"invoerapparaat vast en de SFR-waarden in de richting van de "
+"afbeeldingsbreedte, afbeeldingshoogte en de diagonale richting, zoals "
+"beschreven in ISO 12233."
 
 #: libexif/exif-tag.c:727
 msgid "Focal Plane x-Resolution"
 msgstr "Brandpuntsvlak x-resolutie"
 
 #: libexif/exif-tag.c:728
-msgid "Indicates the number of pixels in the image width (X) direction per <FocalPlaneResolutionUnit> on the camera focal plane."
-msgstr "Geeft het aantal pixels in de richting van de afbeeldingsbreedte (X) per <FocalPlaneResolutionUnit> op het camera brandpuntsvlak"
+msgid ""
+"Indicates the number of pixels in the image width (X) direction per "
+"<FocalPlaneResolutionUnit> on the camera focal plane."
+msgstr ""
+"Geeft het aantal pixels in de richting van de afbeeldingsbreedte (X) per "
+"<FocalPlaneResolutionUnit> op het camera brandpuntsvlak"
 
 #: libexif/exif-tag.c:732
 msgid "Focal Plane y-Resolution"
 msgstr "Brandpuntsvlak y-resolutie"
 
 #: libexif/exif-tag.c:733
-msgid "Indicates the number of pixels in the image height (V) direction per <FocalPlaneResolutionUnit> on the camera focal plane."
-msgstr "Geeft het aantal pixels in de richting van de afbeeldingshoogte (V) per <FocalPlaneResolutionUnit> op het camera brandpuntsvlak"
+msgid ""
+"Indicates the number of pixels in the image height (V) direction per "
+"<FocalPlaneResolutionUnit> on the camera focal plane."
+msgstr ""
+"Geeft het aantal pixels in de richting van de afbeeldingshoogte (V) per "
+"<FocalPlaneResolutionUnit> op het camera brandpuntsvlak"
 
 #: libexif/exif-tag.c:737
 msgid "Focal Plane Resolution Unit"
 msgstr "Resolutieeenheid brandpuntsvlak"
 
 #: libexif/exif-tag.c:738
-msgid "Indicates the unit for measuring <FocalPlaneXResolution> and <FocalPlaneYResolution>. This value is the same as the <ResolutionUnit>."
-msgstr "Geeft een meeteenheid van <FocalPlaneXResolution> en <FocalPlaneYResolution>. Deze waarde is gelijk aan de <ResolutionUnit>."
+msgid ""
+"Indicates the unit for measuring <FocalPlaneXResolution> and "
+"<FocalPlaneYResolution>. This value is the same as the <ResolutionUnit>."
+msgstr ""
+"Geeft een meeteenheid van <FocalPlaneXResolution> en "
+"<FocalPlaneYResolution>. Deze waarde is gelijk aan de <ResolutionUnit>."
 
 #: libexif/exif-tag.c:743
 msgid "Subject Location"
 msgstr "Locatie van het onderwerp"
 
 #: libexif/exif-tag.c:744
-msgid "Indicates the location of the main subject in the scene. The value of this tag represents the pixel at the center of the main subject relative to the left edge, prior to rotation processing as per the <Rotation> tag. The first value indicates the X column number and the second indicates the Y row number."
-msgstr "Geeft de locatie van het hoofdonderwerp in de scene. De waarde van dit label representeert de pixel in het midden van het hoofdonderwerp relatief tot de linker rand, voordat een rotatie volgens het <Rotation>-label wordt uitgevoerd. De eerste waarde staat voor het X-kolomnummer en de tweede voor het Y-kolomnummer."
+msgid ""
+"Indicates the location of the main subject in the scene. The value of this "
+"tag represents the pixel at the center of the main subject relative to the "
+"left edge, prior to rotation processing as per the <Rotation> tag. The first "
+"value indicates the X column number and the second indicates the Y row "
+"number."
+msgstr ""
+"Geeft de locatie van het hoofdonderwerp in de scene. De waarde van dit label "
+"representeert de pixel in het midden van het hoofdonderwerp relatief tot de "
+"linker rand, voordat een rotatie volgens het <Rotation>-label wordt "
+"uitgevoerd. De eerste waarde staat voor het X-kolomnummer en de tweede voor "
+"het Y-kolomnummer."
 
 #: libexif/exif-tag.c:751
 msgid "Exposure Index"
 msgstr "Belichtingsgetal"
 
 #: libexif/exif-tag.c:752
-msgid "Indicates the exposure index selected on the camera or input device at the time the image is captured."
-msgstr "Geeft het belichtingsgetal aan zoals dat geselecteerd is op de camera of apparaat op het moment dat de afbeelding genomen is."
+msgid ""
+"Indicates the exposure index selected on the camera or input device at the "
+"time the image is captured."
+msgstr ""
+"Geeft het belichtingsgetal aan zoals dat geselecteerd is op de camera of "
+"apparaat op het moment dat de afbeelding genomen is."
 
 #: libexif/exif-tag.c:755
 msgid "Sensing Method"
@@ -3310,31 +4063,45 @@ msgstr "Waarnemingsmethode"
 
 #: libexif/exif-tag.c:756
 msgid "Indicates the image sensor type on the camera or input device."
-msgstr "Geeft het soort afbeeldingssensor weer op de camera of het invoerapparaat"
+msgstr ""
+"Geeft het soort afbeeldingssensor weer op de camera of het invoerapparaat"
 
 #: libexif/exif-tag.c:759 libexif/fuji/mnote-fuji-tag.c:64
 msgid "File Source"
 msgstr "Bestandsbron"
 
 #: libexif/exif-tag.c:760
-msgid "Indicates the image source. If a DSC recorded the image, the tag value of this tag always be set to 3, indicating that the image was recorded on a DSC."
-msgstr "Geeft de afbeeldingsbron aan. Als de afbeelding met een DSC genomen is, heeft dit label altijd de waarde 3."
+msgid ""
+"Indicates the image source. If a DSC recorded the image, the tag value of "
+"this tag always be set to 3, indicating that the image was recorded on a DSC."
+msgstr ""
+"Geeft de afbeeldingsbron aan. Als de afbeelding met een DSC genomen is, "
+"heeft dit label altijd de waarde 3."
 
 #: libexif/exif-tag.c:764
 msgid "Scene Type"
 msgstr "Soort scène"
 
 #: libexif/exif-tag.c:765
-msgid "Indicates the type of scene. If a DSC recorded the image, this tag value must always be set to 1, indicating that the image was directly photographed."
-msgstr "Geeft het soort scene aan. Als de afbeelding met een DSC genomen is, moet de waarde van dit label altijd 1 bedragen, wat betekent dat de afbeelding direct gefotografeerd is."
+msgid ""
+"Indicates the type of scene. If a DSC recorded the image, this tag value "
+"must always be set to 1, indicating that the image was directly photographed."
+msgstr ""
+"Geeft het soort scene aan. Als de afbeelding met een DSC genomen is, moet de "
+"waarde van dit label altijd 1 bedragen, wat betekent dat de afbeelding "
+"direct gefotografeerd is."
 
 #: libexif/exif-tag.c:775
 msgid "Subject Area"
 msgstr "Locatie van het onderwerp"
 
 #: libexif/exif-tag.c:776
-msgid "This tag indicates the location and area of the main subject in the overall scene."
-msgstr "Dit label geeft de locatie en de gebied van het hoofdonderwerp in de algehele scene."
+msgid ""
+"This tag indicates the location and area of the main subject in the overall "
+"scene."
+msgstr ""
+"Dit label geeft de locatie en de gebied van het hoofdonderwerp in de "
+"algehele scene."
 
 #: libexif/exif-tag.c:780
 msgid "TIFF/EP Standard ID"
@@ -3345,12 +4112,25 @@ msgid "Custom Rendered"
 msgstr "Handmatig gerenderd"
 
 #: libexif/exif-tag.c:782
-msgid "This tag indicates the use of special processing on image data, such as rendering geared to output. When special processing is performed, the reader is expected to disable or minimize any further processing."
-msgstr "Dit label toont het gebruik van speciale bewerkingen op afbeeldingsgegevens, zoals verzadiging van de weergave. Bij het uitvoeren van speciale bewerkingen wordt ervan uitgegaan dat de lezer geen of minimale nabewerking uitvoert."
+msgid ""
+"This tag indicates the use of special processing on image data, such as "
+"rendering geared to output. When special processing is performed, the reader "
+"is expected to disable or minimize any further processing."
+msgstr ""
+"Dit label toont het gebruik van speciale bewerkingen op afbeeldingsgegevens, "
+"zoals verzadiging van de weergave. Bij het uitvoeren van speciale "
+"bewerkingen wordt ervan uitgegaan dat de lezer geen of minimale nabewerking "
+"uitvoert."
 
 #: libexif/exif-tag.c:788
-msgid "This tag indicates the exposure mode set when the image was shot. In auto-bracketing mode, the camera shoots a series of frames of the same scene at different exposure settings."
-msgstr "Dit label toont de belichtingsmodus op het moment van opname. In auto-bracketing modus neemt de camera een aantal opnamen van dezelfde scene met verschillende belichtingsinstellingen."
+msgid ""
+"This tag indicates the exposure mode set when the image was shot. In auto-"
+"bracketing mode, the camera shoots a series of frames of the same scene at "
+"different exposure settings."
+msgstr ""
+"Dit label toont de belichtingsmodus op het moment van opname. In auto-"
+"bracketing modus neemt de camera een aantal opnamen van dezelfde scene met "
+"verschillende belichtingsinstellingen."
 
 #: libexif/exif-tag.c:793
 msgid "This tag indicates the white balance mode set when the image was shot."
@@ -3361,24 +4141,41 @@ msgid "Digital Zoom Ratio"
 msgstr "Digitale zoomverhouding"
 
 #: libexif/exif-tag.c:798
-msgid "This tag indicates the digital zoom ratio when the image was shot. If the numerator of the recorded value is 0, this indicates that digital zoom was not used."
-msgstr "Dit label toont de digitale zoom op het moment van opname. Als de noemer van de vastgelegde waarde 0 is, dan is deze functie niet gebruikt."
+msgid ""
+"This tag indicates the digital zoom ratio when the image was shot. If the "
+"numerator of the recorded value is 0, this indicates that digital zoom was "
+"not used."
+msgstr ""
+"Dit label toont de digitale zoom op het moment van opname. Als de noemer van "
+"de vastgelegde waarde 0 is, dan is deze functie niet gebruikt."
 
 #: libexif/exif-tag.c:803
 msgid "Focal Length In 35mm Film"
 msgstr "Brandpuntsafstand bij 35mm-film "
 
 #: libexif/exif-tag.c:804
-msgid "This tag indicates the equivalent focal length assuming a 35mm film camera, in mm. A value of 0 means the focal length is unknown. Note that this tag differs from the FocalLength tag."
-msgstr "Dit label toont de brandpuntsafstand vergelijkbaar met een 35mm-filmcamera, uitgedrukt in mm. De waarde 0 betekent dat deze onbekend is. Let op het verschil met het label Brandpuntsafstand."
+msgid ""
+"This tag indicates the equivalent focal length assuming a 35mm film camera, "
+"in mm. A value of 0 means the focal length is unknown. Note that this tag "
+"differs from the FocalLength tag."
+msgstr ""
+"Dit label toont de brandpuntsafstand vergelijkbaar met een 35mm-filmcamera, "
+"uitgedrukt in mm. De waarde 0 betekent dat deze onbekend is. Let op het "
+"verschil met het label Brandpuntsafstand."
 
 #: libexif/exif-tag.c:810
 msgid "Scene Capture Type"
 msgstr "Opnametype van scène"
 
 #: libexif/exif-tag.c:811
-msgid "This tag indicates the type of scene that was shot. It can also be used to record the mode in which the image was shot. Note that this differs from the scene type <SceneType> tag."
-msgstr "Dit label toont het soort scene van de opname. Het kan ook gebruikt worden voor de modus waarin de opname is gemaakt. Let op het verschil met het label scenetype <SceneType>."
+msgid ""
+"This tag indicates the type of scene that was shot. It can also be used to "
+"record the mode in which the image was shot. Note that this differs from the "
+"scene type <SceneType> tag."
+msgstr ""
+"Dit label toont het soort scene van de opname. Het kan ook gebruikt worden "
+"voor de modus waarin de opname is gemaakt. Let op het verschil met het label "
+"scenetype <SceneType>."
 
 #: libexif/exif-tag.c:816
 msgid "Gain Control"
@@ -3389,24 +4186,42 @@ msgid "This tag indicates the degree of overall image gain adjustment."
 msgstr "Dit label toont de algemene versterkingsinstelling voor afbeeldingen."
 
 #: libexif/exif-tag.c:821
-msgid "This tag indicates the direction of contrast processing applied by the camera when the image was shot."
-msgstr "Dit label toont de richting van contrastbewerking door de camera tijdens de opname."
+msgid ""
+"This tag indicates the direction of contrast processing applied by the "
+"camera when the image was shot."
+msgstr ""
+"Dit label toont de richting van contrastbewerking door de camera tijdens de "
+"opname."
 
 #: libexif/exif-tag.c:825
-msgid "This tag indicates the direction of saturation processing applied by the camera when the image was shot."
-msgstr "Dit label toont de richting van verzadigingsbewerking door de camera tijdens de opname."
+msgid ""
+"This tag indicates the direction of saturation processing applied by the "
+"camera when the image was shot."
+msgstr ""
+"Dit label toont de richting van verzadigingsbewerking door de camera tijdens "
+"de opname."
 
 #: libexif/exif-tag.c:829
-msgid "This tag indicates the direction of sharpness processing applied by the camera when the image was shot."
-msgstr "Dit label toont de richting van scherptebewerking door de camera tijdens de opname."
+msgid ""
+"This tag indicates the direction of sharpness processing applied by the "
+"camera when the image was shot."
+msgstr ""
+"Dit label toont de richting van scherptebewerking door de camera tijdens de "
+"opname."
 
 #: libexif/exif-tag.c:833
 msgid "Device Setting Description"
 msgstr "Beschrijving van apparaatinstellingen"
 
 #: libexif/exif-tag.c:834
-msgid "This tag indicates information on the picture-taking conditions of a particular camera model. The tag is used only to indicate the picture-taking conditions in the reader."
-msgstr "Dit label toont informatie over de opnamecondities van een bepaald cameramodel. Het label wordt alleen gebruikt voor de weergave van de opnamecondities in de lezer."
+msgid ""
+"This tag indicates information on the picture-taking conditions of a "
+"particular camera model. The tag is used only to indicate the picture-taking "
+"conditions in the reader."
+msgstr ""
+"Dit label toont informatie over de opnamecondities van een bepaald "
+"cameramodel. Het label wordt alleen gebruikt voor de weergave van de "
+"opnamecondities in de lezer."
 
 #: libexif/exif-tag.c:840
 msgid "Subject Distance Range"
@@ -3421,8 +4236,14 @@ msgid "Image Unique ID"
 msgstr "Unieke afbeeldings-ID"
 
 #: libexif/exif-tag.c:844
-msgid "This tag indicates an identifier assigned uniquely to each image. It is recorded as an ASCII string equivalent to hexadecimal notation and 128-bit fixed length."
-msgstr "Dit label toont een unieke code toegewezen aan iedere afbeelding. Het wordt opgeslagen als een ASCII-tekenreeks vergelijkbaar met hexidecimale notatie en met een vaste lengte van 128-bit."
+msgid ""
+"This tag indicates an identifier assigned uniquely to each image. It is "
+"recorded as an ASCII string equivalent to hexadecimal notation and 128-bit "
+"fixed length."
+msgstr ""
+"Dit label toont een unieke code toegewezen aan iedere afbeelding. Het wordt "
+"opgeslagen als een ASCII-tekenreeks vergelijkbaar met hexidecimale notatie "
+"en met een vaste lengte van 128-bit."
 
 #: libexif/exif-tag.c:849
 msgid "Gamma"
@@ -3624,7 +4445,7 @@ msgid "%2.2f mm"
 msgstr "%2.2f mm"
 
 #: libexif/fuji/mnote-fuji-entry.c:298 libexif/pentax/mnote-pentax-entry.c:399
-#: libexif/pentax/mnote-pentax-entry.c:439
+#: libexif/pentax/mnote-pentax-entry.c:451
 #, c-format
 msgid "%i bytes unknown data"
 msgstr "%i bytes onbekende gegevens"
