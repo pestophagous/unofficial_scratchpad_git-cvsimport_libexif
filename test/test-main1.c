@@ -1,4 +1,8 @@
 
+#ifdef __FRAMAC__
+#include "__fc_string_axiomatic.h"
+#endif // __FRAMAC__
+
 #include "libexif/exif-entry.h"
 
 #include <stdio.h>       // printf
@@ -84,6 +88,7 @@ int main(void)
     char other_chars[4] = "-o.";
 
     printf("ten_chars: %s\n", ten_chars);
+    /*@ assert valid_read_string(&other_chars[0]); */
     strncat(ten_chars, other_chars, 9-2);
     printf("ten_chars: %s\n", ten_chars);
 
