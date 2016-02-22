@@ -76,5 +76,25 @@ int main(void)
     exif_entry_get_value(&the_entries[2], valout, 200);
     printf("output of exif_entry_get_value: %s\n", valout);
 
+    char ten_chars[10];
+    memset(ten_chars, 0, 10);
+    ten_chars[0] = 'h';
+    ten_chars[1] = 'i';
+
+    char other_chars[4] = "-o.";
+
+    printf("ten_chars: %s\n", ten_chars);
+    strncat(ten_chars, other_chars, 9-2);
+    printf("ten_chars: %s\n", ten_chars);
+
+    char ten_more_chars[10];
+    memset(ten_more_chars, 0, 10);
+    ten_more_chars[0] = 'h';
+    ten_more_chars[1] = 'i';
+
+    printf("ten_more_chars: %s\n", ten_more_chars);
+    strncat(ten_more_chars, "=a!", 9-2);
+    printf("ten_more_chars: %s\n", ten_more_chars);
+
     return 0;
 }
