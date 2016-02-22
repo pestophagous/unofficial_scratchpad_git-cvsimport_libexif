@@ -1,0 +1,6 @@
+#  launch gdb.
+#  then tell gdb:  source ~/path/to/this/gdbcmd
+
+file ~/m/exif/github_libexif/test/.libs/test-main1
+set env LD_LIBRARY_PATH=/home/user/m/exif/github_libexif/libexif/.libs:$LD_LIBRARY_PATH
+break main
