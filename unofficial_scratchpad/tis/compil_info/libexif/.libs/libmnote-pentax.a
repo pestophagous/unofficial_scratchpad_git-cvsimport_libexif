@@ -1,0 +1,8 @@
+6
+ar
+cru
+.libs/libmnote-pentax.a
+.libs/mnote-pentax-entry.o
+.libs/exif-mnote-data-pentax.o
+.libs/mnote-pentax-tag.o
+libexif

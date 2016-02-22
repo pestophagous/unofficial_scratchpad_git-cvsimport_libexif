@@ -1,0 +1,11 @@
+9
+gcc
+-g
+-O0
+-g
+-Wall
+-o
+test-integers
+test-integers.o
+-lm
+test

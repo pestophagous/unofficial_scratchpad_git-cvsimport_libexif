@@ -1,0 +1,8 @@
+6
+ar
+cru
+.libs/libmnote-fuji.a
+.libs/mnote-fuji-entry.o
+.libs/exif-mnote-data-fuji.o
+.libs/mnote-fuji-tag.o
+libexif

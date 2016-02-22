@@ -1,0 +1,8 @@
+6
+ar
+cru
+.libs/libmnote-olympus.a
+.libs/mnote-olympus-entry.o
+.libs/exif-mnote-data-olympus.o
+.libs/mnote-olympus-tag.o
+libexif

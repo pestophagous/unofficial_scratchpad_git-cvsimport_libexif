@@ -1,0 +1,14 @@
+12
+gcc
+-g
+-O0
+-g
+-Wall
+-o
+.libs/write-exif
+write-exif.o
+../../libexif/.libs/libexif.so
+-lm
+-Wl,-rpath
+-Wl,/home/user/m/exif/github_libexif/install/lib
+contrib/examples

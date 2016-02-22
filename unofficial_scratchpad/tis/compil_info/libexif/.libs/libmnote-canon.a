@@ -1,0 +1,8 @@
+6
+ar
+cru
+.libs/libmnote-canon.a
+.libs/exif-mnote-data-canon.o
+.libs/mnote-canon-entry.o
+.libs/mnote-canon-tag.o
+libexif
