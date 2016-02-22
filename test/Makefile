@@ -31,9 +31,9 @@ PRE_UNINSTALL = :
 POST_UNINSTALL = :
 build_triplet = x86_64-unknown-linux-gnu
 host_triplet = x86_64-unknown-linux-gnu
-TESTS = test-mem$(EXEEXT) test-value$(EXEEXT) test-integers$(EXEEXT) \
+TESTS = test-main1$(EXEEXT) test-mem$(EXEEXT) test-value$(EXEEXT) test-integers$(EXEEXT) \
 	test-parse$(EXEEXT) test-tagtable$(EXEEXT)
-check_PROGRAMS = test-mem$(EXEEXT) test-mnote$(EXEEXT) \
+check_PROGRAMS = test-main1$(EXEEXT) test-mem$(EXEEXT) test-mnote$(EXEEXT) \
 	test-value$(EXEEXT) test-integers$(EXEEXT) test-parse$(EXEEXT) \
 	test-tagtable$(EXEEXT)
 subdir = test
@@ -59,9 +59,14 @@ am__configure_deps = $(am__aclocal_m4_deps) $(CONFIGURE_DEPENDENCIES) \
 mkinstalldirs = $(SHELL) $(top_srcdir)/mkinstalldirs
 CONFIG_HEADER = $(top_builddir)/config.h
 CONFIG_CLEAN_FILES =
+am__DEPENDENCIES_1 =
 test_integers_SOURCES = test-integers.c
 test_integers_OBJECTS = test-integers.$(OBJEXT)
 test_integers_LDADD = $(LDADD)
+test_main1_SOURCES = test-main1.c
+test_main1_OBJECTS = test-main1.$(OBJEXT)
+test_main1_DEPENDENCIES = $(top_builddir)/libexif/libexif.la \
+	$(am__DEPENDENCIES_1)
 test_mem_SOURCES = test-mem.c
 test_mem_OBJECTS = test-mem.$(OBJEXT)
 am__DEPENDENCIES_1 =
@@ -95,9 +100,9 @@ CCLD = $(CC)
 LINK = $(LIBTOOL) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) \
 	--mode=link $(CCLD) $(AM_CFLAGS) $(CFLAGS) $(AM_LDFLAGS) \
 	$(LDFLAGS) -o $@
-SOURCES = test-integers.c test-mem.c test-mnote.c test-parse.c \
+SOURCES = test-main1.c test-integers.c test-mem.c test-mnote.c test-parse.c \
 	test-tagtable.c test-value.c
-DIST_SOURCES = test-integers.c test-mem.c test-mnote.c test-parse.c \
+DIST_SOURCES = test-main1.c test-integers.c test-mem.c test-mnote.c test-parse.c \
 	test-tagtable.c test-value.c
 RECURSIVE_TARGETS = all-recursive check-recursive dvi-recursive \
 	html-recursive info-recursive install-data-recursive \
@@ -251,6 +256,7 @@ top_builddir = ..
 top_srcdir = ..
 SUBDIRS = nls
 TEST_IMAGES = $(top_srcdir)/daniel-andrews-sample.jpg
+test_main1_LDADD = $(top_builddir)/libexif/libexif.la $(LTLIBINTL)
 test_mem_LDADD = $(top_builddir)/libexif/libexif.la $(LTLIBINTL)
 test_mnote_LDADD = $(top_builddir)/libexif/libexif.la $(LTLIBINTL)
 test_value_LDADD = $(top_builddir)/libexif/libexif.la $(LTLIBINTL)
@@ -299,6 +305,9 @@ clean-checkPROGRAMS:
 test-integers$(EXEEXT): $(test_integers_OBJECTS) $(test_integers_DEPENDENCIES) 
 	@rm -f test-integers$(EXEEXT)
 	$(LINK) $(test_integers_OBJECTS) $(test_integers_LDADD) $(LIBS)
+test-main1$(EXEEXT): $(test_main1_OBJECTS) $(test_main1_DEPENDENCIES) 
+	@rm -f test-main1$(EXEEXT)
+	$(LINK) $(test_main1_OBJECTS) $(test_main1_LDADD) $(LIBS)
 test-mem$(EXEEXT): $(test_mem_OBJECTS) $(test_mem_DEPENDENCIES) 
 	@rm -f test-mem$(EXEEXT)
 	$(LINK) $(test_mem_OBJECTS) $(test_mem_LDADD) $(LIBS)
@@ -321,6 +330,7 @@ mostlyclean-compile:
 distclean-compile:
 	-rm -f *.tab.c
 
+include ./$(DEPDIR)/test-main1.Po
 include ./$(DEPDIR)/test-integers.Po
 include ./$(DEPDIR)/test-mem.Po
 include ./$(DEPDIR)/test-mnote.Po
