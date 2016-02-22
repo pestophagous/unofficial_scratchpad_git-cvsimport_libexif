@@ -1109,7 +1109,7 @@ exif_data_dump (ExifData *data)
 ExifByteOrder
 exif_data_get_byte_order (ExifData *data)
 {
-	if (!data)
+	if ( (!data) || (!data->priv) )
 		return (0);
 
 	return (data->priv->order);
