@@ -170,3 +170,4 @@ information about EXIF.
  - http://www.sno.phy.queensu.ca/~phil/exiftool/TagNames/index.html: Looks
    like libexif in Perl. Seems to support a lot of MakerNotes.
 
+
