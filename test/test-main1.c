@@ -27,6 +27,11 @@ int Frama_C_interval(int min, int max)
 
 #endif // __FRAMAC__
 
+// the "I" in ICHARS stands for input. ExifEntry::data is part of the input to exif_entry_get_value
+#define ICHARS_QTY 400
+// the "O" in OCHARS is for 'output'.
+#define OCHARS_QTY 200
+
 int main(void)
 {
     ExifData one_jpeg;
@@ -41,10 +46,10 @@ int main(void)
     an_idf.parent = &one_jpeg;
     an_idf.priv = 0;
 
-    unsigned char tag_data_buffer[400];  // add nondeterminism to this buffer.
+    unsigned char tag_data_buffer[ICHARS_QTY];  // add nondeterminism to this buffer.
 
     size_t ii = 0;
-    for ( ii = 0; ii < 400; ii++ )
+    for ( ii = 0; ii < ICHARS_QTY; ii++ )
     {
         tag_data_buffer[ii] = Frama_C_unsigned_char_interval( 0, 0xFF );
     }
@@ -66,7 +71,7 @@ int main(void)
     the_entries[0].format = Frama_C_interval(0, 20);
     the_entries[0].components = Frama_C_interval(0, 20);
 
-    the_entries[0].size = Frama_C_interval(0, 400);
+    the_entries[0].size = Frama_C_interval(0, ICHARS_QTY);
     the_entries[0].data = tag_data_buffer;
 
     the_entries[0].parent = &an_idf;
@@ -102,15 +107,15 @@ int main(void)
     one_jpeg.ifd[3] = &an_idf;
     one_jpeg.ifd[4] = &an_idf;
 
-    char valout[200];
+    char valout[OCHARS_QTY];
 
-    exif_entry_get_value(&the_entries[0], valout, 200);
+    exif_entry_get_value(&the_entries[0], valout, OCHARS_QTY);
     printf("output of exif_entry_get_value: %s\n", valout);
 
-    /* exif_entry_get_value(&the_entries[1], valout, 200); */
+    /* exif_entry_get_value(&the_entries[1], valout, OCHARS_QTY); */
     /* printf("output of exif_entry_get_value: %s\n", valout); */
 
-    /* exif_entry_get_value(&the_entries[2], valout, 200); */
+    /* exif_entry_get_value(&the_entries[2], valout, OCHARS_QTY); */
     /* printf("output of exif_entry_get_value: %s\n", valout); */
 
     return 0;
