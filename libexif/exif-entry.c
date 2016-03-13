@@ -203,7 +203,7 @@ exif_entry_fix (ExifEntry *e)
 	if (!e || !e->priv) return;
 
 	switch (e->tag) {
-	
+
 	/* These tags all need to be of format SHORT. */
 	case EXIF_TAG_YCBCR_SUB_SAMPLING:
 	case EXIF_TAG_SUBJECT_AREA:
@@ -278,7 +278,7 @@ exif_entry_fix (ExifEntry *e)
 			if (!e->parent || !e->parent->parent) break;
 			o = exif_data_get_byte_order (e->parent->parent);
 			for (i = 0; i < e->components; i++) {
-				sr = exif_get_srational (e->data + i * 
+				sr = exif_get_srational (e->data + i *
 					exif_format_get_size (
 						EXIF_FORMAT_SRATIONAL), o);
 				r.numerator = (ExifLong) sr.numerator;
@@ -311,7 +311,7 @@ exif_entry_fix (ExifEntry *e)
 			if (!e->parent || !e->parent->parent) break;
 			o = exif_data_get_byte_order (e->parent->parent);
 			for (i = 0; i < e->components; i++) {
-				r = exif_get_rational (e->data + i * 
+				r = exif_get_rational (e->data + i *
 					exif_format_get_size (
 						EXIF_FORMAT_RATIONAL), o);
 				sr.numerator = (ExifLong) r.numerator;
@@ -389,8 +389,8 @@ exif_entry_fix (ExifEntry *e)
 			break;
 		}
 
-		/* 
-		 * First 8 bytes need to follow the specification. If they don't, 
+		/*
+		 * First 8 bytes need to follow the specification. If they don't,
 		 * assume ASCII.
 		 */
 		if (memcmp (e->data, "ASCII\0\0\0"     , 8) &&
@@ -607,7 +607,7 @@ exif_entry_dump (ExifEntry *e, unsigned int indent)
 
 /*! Check if a string consists entirely of a single, repeated character.
  * Up to first n bytes are checked.
- * 
+ *
  * \param[in] data pointer of string to check
  * \param[in] ch character to match
  * \param[in] n maximum number of characters to match
@@ -749,7 +749,7 @@ static const struct {
       {0, {NULL}}}},
   { EXIF_TAG_RESOLUTION_UNIT,
     { {2, {N_("Inch"), N_("in"), NULL}},
-      {3, {N_("Centimeter"), N_("cm"), NULL}}, 
+      {3, {N_("Centimeter"), N_("cm"), NULL}},
       {0, {NULL}}}},
   { EXIF_TAG_EXPOSURE_PROGRAM,
     { {0, {N_("Not defined"), NULL}},
@@ -803,7 +803,7 @@ static const struct {
       {0x005f, {N_("Flash fired, auto mode, return light detected, "
 		   "red-eye reduction mode"), NULL}},
       {0x0000, {NULL}}}},
-  { EXIF_TAG_SUBJECT_DISTANCE_RANGE, 
+  { EXIF_TAG_SUBJECT_DISTANCE_RANGE,
     { {0, {N_("Unknown"), N_("?"), NULL}},
       {1, {N_("Macro"), NULL}},
       {2, {N_("Close view"), N_("Close"), NULL}},
@@ -849,7 +849,7 @@ exif_entry_get_value (ExifEntry *e, char *val, unsigned int maxlen)
 	/* libexif should use the default system locale.
 	 * If an application specifically requires UTF-8, then we
 	 * must give the application a way to tell libexif that.
-	 * 
+	 *
 	 * bind_textdomain_codeset (GETTEXT_PACKAGE, "UTF-8");
 	 */
 	bindtextdomain (GETTEXT_PACKAGE, LOCALEDIR);
@@ -881,7 +881,7 @@ exif_entry_get_value (ExifEntry *e, char *val, unsigned int maxlen)
 		 * case here, only refuse to read it if there is no chance
 		 * of finding readable data.
 		 */
-		if ((e->format != EXIF_FORMAT_ASCII) || 
+		if ((e->format != EXIF_FORMAT_ASCII) ||
 		    (e->size <= 8) ||
 		    ( memcmp (e->data, "ASCII\0\0\0"  , 8) &&
 		      memcmp (e->data, "UNICODE\0"    , 8) &&
@@ -891,7 +891,7 @@ exif_entry_get_value (ExifEntry *e, char *val, unsigned int maxlen)
 
 		/*
 		 * Note that, according to the specification (V2.1, p 40),
-		 * the user comment field does not have to be 
+		 * the user comment field does not have to be
 		 * NULL terminated.
 		 */
 		if ((e->size >= 8) && !memcmp (e->data, "ASCII\0\0\0", 8)) {
@@ -1205,7 +1205,7 @@ exif_entry_get_value (ExifEntry *e, char *val, unsigned int maxlen)
 		default:
 			snprintf (val, maxlen, _("Unexpected number "
 				"of components (%li, expected 2, 3, or 4)."),
-				e->components);	
+				e->components);
 		}
 		break;
 	case EXIF_TAG_GPS_VERSION_ID:
