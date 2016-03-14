@@ -42,7 +42,11 @@ int main_strncat_1(void)
 
     // for strncat: the size of dest must be at least strlen(dest)+n+1.
 
-    strncat (test_buff, " ", (9) - strlen(test_buff));
+    if( test_buff[8] != 0 && test_buff[9] == 0 )
+        strncat (test_buff, " ", (9) - 9);
+
+    if( test_buff[8] == 0 )
+        strncat (test_buff, " ", (9) - 8);
 
     return 0;
 }
