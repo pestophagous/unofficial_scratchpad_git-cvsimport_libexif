@@ -35,14 +35,26 @@ int main_strncat_1(void)
 
     unsigned char test_buff[10];
     for ( ii = 0; ii < 10; ii++ )
-        test_buff[ii] = Frama_C_unsigned_char_interval( 1, 0xFF );
+        test_buff[ii] = Frama_C_unsigned_char_interval( 0, 0xFF );
 
-    test_buff[10-2] = Frama_C_unsigned_char_interval( 0,1 );
-    test_buff[10-1] = 0;
+    test_buff[9] = 0;
 
     // for strncat: the size of dest must be at least strlen(dest)+n+1.
 
-    //@assert test_buff[8] == 0 || test_buff[9] == 0;
+    /*@
+      assert
+      test_buff[0] == 0 ||
+      test_buff[0] != 0 && test_buff[1] == 0 ||
+      test_buff[0] != 0 && test_buff[1] != 0 && test_buff[2] == 0 ||
+      test_buff[0] != 0 && test_buff[1] != 0 && test_buff[2] != 0 && test_buff[3] == 0 ||
+      test_buff[0] != 0 && test_buff[1] != 0 && test_buff[2] != 0 && test_buff[3] != 0 && test_buff[4] == 0 ||
+      test_buff[0] != 0 && test_buff[1] != 0 && test_buff[2] != 0 && test_buff[3] != 0 && test_buff[4] != 0 && test_buff[5] == 0 ||
+      test_buff[0] != 0 && test_buff[1] != 0 && test_buff[2] != 0 && test_buff[3] != 0 && test_buff[4] != 0 && test_buff[5] != 0 && test_buff[6] == 0 ||
+      test_buff[0] != 0 && test_buff[1] != 0 && test_buff[2] != 0 && test_buff[3] != 0 && test_buff[4] != 0 && test_buff[5] != 0 && test_buff[6] != 0 && test_buff[7] == 0 ||
+      test_buff[0] != 0 && test_buff[1] != 0 && test_buff[2] != 0 && test_buff[3] != 0 && test_buff[4] != 0 && test_buff[5] != 0 && test_buff[6] != 0 && test_buff[7] != 0 && test_buff[8] == 0 ||
+      test_buff[0] != 0 && test_buff[1] != 0 && test_buff[2] != 0 && test_buff[3] != 0 && test_buff[4] != 0 && test_buff[5] != 0 && test_buff[6] != 0 && test_buff[7] != 0 && test_buff[8] != 0
+      ;
+    */
     strncat (test_buff, " ", (9) - strlen(test_buff));
 
     return 0;
