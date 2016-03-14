@@ -37,7 +37,7 @@ int main_strncat_1(void)
     for ( ii = 0; ii < 10; ii++ )
         test_buff[ii] = Frama_C_unsigned_char_interval( 1, 0xFF );
 
-    //test_buff[10-2] = Frama_C_unsigned_char_interval( 0,1 );
+    test_buff[10-2] = Frama_C_unsigned_char_interval( 0,1 );
     test_buff[10-1] = 0;
 
     // for strncat: the size of dest must be at least strlen(dest)+n+1.
