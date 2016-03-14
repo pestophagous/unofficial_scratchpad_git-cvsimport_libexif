@@ -30,9 +30,9 @@ int Frama_C_interval(int min, int max)
 #include "which_main.h"
 
 // the "I" in ICHARS stands for input. ExifEntry::data is part of the input to exif_entry_get_value
-#define ICHARS_QTY 400
+#define ICHARS_QTY 100
 // the "O" in OCHARS is for 'output'.
-#define OCHARS_QTY 200
+#define OCHARS_QTY 14
 
 int main_a(void)
 {
