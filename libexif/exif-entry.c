@@ -968,12 +968,13 @@ exif_entry_get_value (ExifEntry *e, char *val, unsigned int maxlen)
 		if (e->size && e->data && match_repeated_char(e->data, ' ', e->size))
 			strncpy (val, (char *) e->data, MIN (maxlen, e->size));
 		else
-			strncpy (val, _("[None]"), maxlen);
-		strncat (val, " ", maxlen - strlen (val));
-		strncat (val, _("(Photographer)"), maxlen - strlen (val));
+			strncpy (val, _("[]"), maxlen);
+
+		//strncat (val, " ", maxlen - strlen (val));
+		strncat (val, _("(P)"), maxlen - strlen (val)); // photographer
 
 		/* Second part: Editor. */
-		strncat (val, " - ", maxlen - strlen (val));
+		strncat (val, "-", maxlen - strlen (val));
 		if (e->size && e->data) {
 			size_t ts;
 			t = e->data + strlen ((char *) e->data) + 1;
@@ -981,10 +982,10 @@ exif_entry_get_value (ExifEntry *e, char *val, unsigned int maxlen)
 			if ((ts > 0) && (strspn ((char *)t, " ") != ts))
 				strncat (val, (char *)t, MIN (maxlen - strlen (val), ts));
 		} else {
-			strncat (val, _("[None]"), maxlen - strlen (val));
+			strncat (val, _("[]"), maxlen - strlen (val));
 		}
-		strncat (val, " ", maxlen - strlen (val));
-		strncat (val, _("(Editor)"), maxlen - strlen (val));
+		//strncat (val, " ", maxlen - strlen (val));
+		strncat (val, _("(E)"), maxlen - strlen (val)); // editor
 
 		break;
 	case EXIF_TAG_FNUMBER:
