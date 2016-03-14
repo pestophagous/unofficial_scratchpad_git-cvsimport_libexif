@@ -17,7 +17,7 @@ Frama_C_interval(int min, int max);
 
 unsigned char Frama_C_unsigned_char_interval(unsigned char min, unsigned char max)
 {
-    return 0xFF;
+    return (rand() % 26) + 65;
 }
 
 int Frama_C_interval(int min, int max)
@@ -32,7 +32,7 @@ int Frama_C_interval(int min, int max)
 // the "O" in OCHARS is for 'output'.
 #define OCHARS_QTY 200
 
-int main(void)
+int main_a(void)
 {
     ExifData one_jpeg;
     one_jpeg.data = 0;
@@ -118,5 +118,58 @@ int main(void)
     /* exif_entry_get_value(&the_entries[2], valout, OCHARS_QTY); */
     /* printf("output of exif_entry_get_value: %s\n", valout); */
 
+    return 0;
+}
+
+int main(void) // main_copyright
+{
+    //srand(12);
+
+    ExifData one_jpeg;
+    one_jpeg.data = 0;
+    one_jpeg.size = 0;
+    one_jpeg.priv = 0;
+
+    // ExifContent->entries[n] holds items of type ExifEntry
+    ExifContent an_idf;
+    an_idf.entries = 0;
+    an_idf.count = 1;
+    an_idf.parent = &one_jpeg;
+    an_idf.priv = 0;
+
+    unsigned char tag_data_buffer[ICHARS_QTY];  // add nondeterminism to this buffer.
+
+    size_t ii = 0;
+    for ( ii = 0; ii < ICHARS_QTY; ii++ )
+    {
+        tag_data_buffer[ii] = Frama_C_unsigned_char_interval( 0, 0xFF );
+    }
+    //tag_data_buffer[35] = '~';
+    //tag_data_buffer[ICHARS_QTY-1] = 0;
+
+    ExifEntry the_entries[1];
+
+    the_entries[0].tag = EXIF_TAG_COPYRIGHT;
+    the_entries[0].format = EXIF_FORMAT_ASCII;
+    the_entries[0].components = ICHARS_QTY;
+
+    the_entries[0].size = ICHARS_QTY;
+    the_entries[0].data = tag_data_buffer;
+
+    the_entries[0].parent = &an_idf;
+    the_entries[0].priv = 0;
+
+    an_idf.entries = the_entries;
+
+    one_jpeg.ifd[0] = &an_idf;
+    one_jpeg.ifd[1] = &an_idf;
+    one_jpeg.ifd[2] = &an_idf;
+    one_jpeg.ifd[3] = &an_idf;
+    one_jpeg.ifd[4] = &an_idf;
+
+    char valout[OCHARS_QTY];
+
+    exif_entry_get_value(&the_entries[0], valout, OCHARS_QTY);
+    printf("output of exif_entry_get_value: %s\n", valout);
     return 0;
 }
