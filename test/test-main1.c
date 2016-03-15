@@ -3,6 +3,7 @@
 
 #include <stdio.h>       // printf
 #include <string.h>      // memset
+#include <stdlib.h>      // rand
 
 #ifdef __FRAMAC__
 #    include "__fc_string_axiomatic.h"
@@ -27,7 +28,7 @@ int Frama_C_interval(int min, int max)
 
 #endif // __FRAMAC__
 
-#include "which_main.h"
+#include "libexif/which_main.h"
 
 // the "I" in ICHARS stands for input. ExifEntry::data is part of the input to exif_entry_get_value
 #define ICHARS_QTY 100
