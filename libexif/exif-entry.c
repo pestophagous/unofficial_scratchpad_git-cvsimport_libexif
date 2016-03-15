@@ -971,8 +971,41 @@ exif_entry_get_value (ExifEntry *e, char *val, unsigned int maxlen)
 			strncpy (val, _("[]"), maxlen);
 
 		//strncat (val, " ", maxlen - strlen (val));
-		strncat (val, _("(P)"), maxlen - strlen (val)); // photographer
+		size_t to_cat = maxlen - strlen (val);
+		/*@assert
+		  val[0] == 0 ||
+		  val[0] != 0 && val[1] == 0 ||
+		  val[0] != 0 && val[1] != 0 && val[2] == 0 ||
+		  val[0] != 0 && val[1] != 0 && val[2] != 0 && val[3] == 0 ||
+		  val[0] != 0 && val[1] != 0 && val[2] != 0 && val[3] != 0 && val[4] == 0 ||
+		  val[0] != 0 && val[1] != 0 && val[2] != 0 && val[3] != 0 && val[4] != 0 && val[5] == 0 ||
+		  val[0] != 0 && val[1] != 0 && val[2] != 0 && val[3] != 0 && val[4] != 0 && val[5] != 0 && val[6] == 0 ||
+		  val[0] != 0 && val[1] != 0 && val[2] != 0 && val[3] != 0 && val[4] != 0 && val[5] != 0 && val[6] != 0 && val[7] == 0 ||
+		  val[0] != 0 && val[1] != 0 && val[2] != 0 && val[3] != 0 && val[4] != 0 && val[5] != 0 && val[6] != 0 && val[7] != 0 && val[8] == 0 ||
+		  val[0] != 0 && val[1] != 0 && val[2] != 0 && val[3] != 0 && val[4] != 0 && val[5] != 0 && val[6] != 0 && val[7] != 0 && val[8] != 0 && val[9] == 0 ||
+		  val[0] != 0 && val[1] != 0 && val[2] != 0 && val[3] != 0 && val[4] != 0 && val[5] != 0 && val[6] != 0 && val[7] != 0 && val[8] != 0 && val[9] != 0 && val[10] == 0 ||
+		  val[0] != 0 && val[1] != 0 && val[2] != 0 && val[3] != 0 && val[4] != 0 && val[5] != 0 && val[6] != 0 && val[7] != 0 && val[8] != 0 && val[9] != 0 && val[10] != 0 && val[11] == 0 ||
+		  val[0] != 0 && val[1] != 0 && val[2] != 0 && val[3] != 0 && val[4] != 0 && val[5] != 0 && val[6] != 0 && val[7] != 0 && val[8] != 0 && val[9] != 0 && val[10] != 0 && val[11] != 0 && val[12] == 0 ||
+		  val[0] != 0 && val[1] != 0 && val[2] != 0 && val[3] != 0 && val[4] != 0 && val[5] != 0 && val[6] != 0 && val[7] != 0 && val[8] != 0 && val[9] != 0 && val[10] != 0 && val[11] != 0 && val[12] != 0;
+		*/
+		strncat (val, _("(P)"), to_cat); // photographer
 
+		/*@assert
+		  val[0] == 0 ||
+		  val[0] != 0 && val[1] == 0 ||
+		  val[0] != 0 && val[1] != 0 && val[2] == 0 ||
+		  val[0] != 0 && val[1] != 0 && val[2] != 0 && val[3] == 0 ||
+		  val[0] != 0 && val[1] != 0 && val[2] != 0 && val[3] != 0 && val[4] == 0 ||
+		  val[0] != 0 && val[1] != 0 && val[2] != 0 && val[3] != 0 && val[4] != 0 && val[5] == 0 ||
+		  val[0] != 0 && val[1] != 0 && val[2] != 0 && val[3] != 0 && val[4] != 0 && val[5] != 0 && val[6] == 0 ||
+		  val[0] != 0 && val[1] != 0 && val[2] != 0 && val[3] != 0 && val[4] != 0 && val[5] != 0 && val[6] != 0 && val[7] == 0 ||
+		  val[0] != 0 && val[1] != 0 && val[2] != 0 && val[3] != 0 && val[4] != 0 && val[5] != 0 && val[6] != 0 && val[7] != 0 && val[8] == 0 ||
+		  val[0] != 0 && val[1] != 0 && val[2] != 0 && val[3] != 0 && val[4] != 0 && val[5] != 0 && val[6] != 0 && val[7] != 0 && val[8] != 0 && val[9] == 0 ||
+		  val[0] != 0 && val[1] != 0 && val[2] != 0 && val[3] != 0 && val[4] != 0 && val[5] != 0 && val[6] != 0 && val[7] != 0 && val[8] != 0 && val[9] != 0 && val[10] == 0 ||
+		  val[0] != 0 && val[1] != 0 && val[2] != 0 && val[3] != 0 && val[4] != 0 && val[5] != 0 && val[6] != 0 && val[7] != 0 && val[8] != 0 && val[9] != 0 && val[10] != 0 && val[11] == 0 ||
+		  val[0] != 0 && val[1] != 0 && val[2] != 0 && val[3] != 0 && val[4] != 0 && val[5] != 0 && val[6] != 0 && val[7] != 0 && val[8] != 0 && val[9] != 0 && val[10] != 0 && val[11] != 0 && val[12] == 0 ||
+		  val[0] != 0 && val[1] != 0 && val[2] != 0 && val[3] != 0 && val[4] != 0 && val[5] != 0 && val[6] != 0 && val[7] != 0 && val[8] != 0 && val[9] != 0 && val[10] != 0 && val[11] != 0 && val[12] != 0;
+		*/
 		/* Second part: Editor. */
 		strncat (val, "-", maxlen - strlen (val));
 		if (e->size && e->data) {
