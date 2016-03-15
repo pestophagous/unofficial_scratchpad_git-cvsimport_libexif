@@ -33,7 +33,8 @@ int Frama_C_interval(int min, int max)
 // the "I" in ICHARS stands for input. ExifEntry::data is part of the input to exif_entry_get_value
 #define ICHARS_QTY 100
 // the "O" in OCHARS is for 'output'.
-#define OCHARS_QTY 14
+#define OCHARS_QTY_W_EXTRA 30
+#define OCHARS_EXTRA 16
 
 int main_a(void)
 {
@@ -110,9 +111,10 @@ int main_a(void)
     one_jpeg.ifd[3] = &an_idf;
     one_jpeg.ifd[4] = &an_idf;
 
-    char valout[OCHARS_QTY];
+    char valout[OCHARS_QTY_W_EXTRA];
+    memset(valout,0,OCHARS_QTY_W_EXTRA);
 
-    exif_entry_get_value(&the_entries[0], valout, OCHARS_QTY);
+    exif_entry_get_value(&the_entries[0], valout, OCHARS_QTY_W_EXTRA - OCHARS_EXTRA );
     printf("output of exif_entry_get_value: %s\n", valout);
 
     /* exif_entry_get_value(&the_entries[1], valout, OCHARS_QTY); */
@@ -170,9 +172,9 @@ int main_copyright(void)
     one_jpeg.ifd[3] = &an_idf;
     one_jpeg.ifd[4] = &an_idf;
 
-    char valout[OCHARS_QTY];
-
-    exif_entry_get_value(&the_entries[0], valout, OCHARS_QTY);
+    char valout[OCHARS_QTY_W_EXTRA];
+    memset(valout,0,OCHARS_QTY_W_EXTRA);
+    exif_entry_get_value(&the_entries[0], valout, OCHARS_QTY_W_EXTRA - OCHARS_EXTRA );
     printf("output of exif_entry_get_value: %s\n", valout);
     return 0;
 }
