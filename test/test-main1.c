@@ -149,7 +149,10 @@ int main_copyright(void)
     {
         tag_data_buffer[ii] = Frama_C_unsigned_char_interval( 0, 0xFF );
     }
-    //tag_data_buffer[35] = '~';
+#ifndef __FRAMAC__
+    tag_data_buffer[2] = 0; // unless there is a nul byte, libexif doesn't parse both photog AND editor
+    //printf("%d\n", (int) tag_data_buffer[3]);
+#endif
     //tag_data_buffer[ICHARS_QTY-1] = 0;
 
     ExifEntry the_entries[1];

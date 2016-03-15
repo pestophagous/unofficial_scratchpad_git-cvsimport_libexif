@@ -605,6 +605,24 @@ exif_entry_dump (ExifEntry *e, unsigned int indent)
 	printf ("%s  Value: %s\n", buf, exif_entry_get_value (e, value, sizeof(value)));
 }
 
+void *memchr(const void *s, int c, size_t n)
+{
+	unsigned char* rslt = 0;
+	int i;
+	for (i=0; i<n; i++)
+	{
+		if (* (unsigned char*)s==c)
+		{
+			rslt = s;
+			break;
+		}
+
+		s++;
+	}
+
+	return rslt;
+}
+
 /*! Check if a string consists entirely of a single, repeated character.
  * Up to first n bytes are checked.
  *
@@ -1009,11 +1027,21 @@ exif_entry_get_value (ExifEntry *e, char *val, unsigned int maxlen)
 		/* Second part: Editor. */
 		strncat (val, "-", maxlen - strlen (val));
 		if (e->size && e->data) {
-			size_t ts;
-			t = e->data + strlen ((char *) e->data) + 1;
-			ts = e->data + e->size - t;
-			if ((ts > 0) && (strspn ((char *)t, " ") != ts))
-				strncat (val, (char *)t, MIN (maxlen - strlen (val), ts));
+			// go to 1 beyond some 0 (nul) in the data.
+			// figure out what is from there til end of data.
+			// if that stuff-until-end isn't all blank, then cat it onto val.
+			const unsigned char *ptr_to_nul = memchr(e->data, 0, e->size);
+			const unsigned char *ptr_off_end = e->data + e->size;
+			if ( ptr_to_nul && ++ptr_to_nul < ptr_off_end )
+			{
+				size_t remaining = ptr_off_end - ptr_to_nul;
+				//if (match_repeated_char(ptr_to_nul, ' ', remaining))
+				{
+					size_t lenn = strlen (val);
+					//@assert lenn <= 13;
+					strncat (val, (char *)ptr_to_nul, MIN (maxlen - lenn, remaining));
+				}
+			}
 		} else {
 			strncat (val, _("[]"), maxlen - strlen (val));
 		}
